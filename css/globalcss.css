@@ -68,3 +68,15 @@ img {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--dt-mono);
 }
+
+a {
+    background: var(--gd-blue);
+    background: -webkit-linear-gradient(to bottom left, var(--gd-blue) 0%, var(--gd-purple) 100%);
+    background: -moz-linear-gradient(to bottom left, var(--gd-blue) 0%, var(--gd-purple) 100%);
+    background: linear-gradient(to bottom left, var(--gd-blue) 0%, var(--gd-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-decoration: underline var(--gd-blue);
+    text-decoration-thickness: 1px;
+}

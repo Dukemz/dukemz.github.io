@@ -2,6 +2,7 @@ async function loadPosts(divs, limit) {
     let data;
     await $.getJSON("/posts/meta.json", json => data = json);
     if (!limit) limit = data.length;
+    data = data.sort((a, b) => a.time - b.time);
     let divIndex = 0;
     for (let i = 0; i < limit; i++) {
         if (!data[i]) continue;
