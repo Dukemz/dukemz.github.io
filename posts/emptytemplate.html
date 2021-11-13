@@ -148,10 +148,8 @@
                 let data;
                 await $.getJSON("/posts/meta.json", json => data = json);
                 let meta = data.find(x => x.link.split("/").every((y, i) => y == window.location.pathname.split("/")[i]));
-                console.log(meta);
                 if (meta?.time == undefined) return $(".date").text("No date.")
                 try {
-                    console.log("yes")
                     let time = new Date(meta.time);
                     $(".date").text(`${time.toLocaleDateString(undefined, { day: "numeric", month: "long", year: "numeric" })}`)
                     $(".date").attr("title", "");
