@@ -14,7 +14,6 @@ async function loadPosts(divs, limit) {
 }
 
 function generatePost(object) {
-    console.log(object)
     if (!object.title) throw new Error();
     if (!object.image) {
         return $(`
