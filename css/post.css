@@ -9,6 +9,10 @@
     top: 0;
 }
 
+.article-progress-container a {
+    -webkit-text-fill-color: inherit;
+}
+
 .article-progress-bar {
     background-color: var(--gd-purple);
     width: 0;
