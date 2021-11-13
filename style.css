@@ -1,0 +1,43 @@
+.background {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.background .shape-thing svg {
+    width: 35vw;
+}
+
+.bio h1 {
+    font-size: calc(1.375rem + 6vw);
+    font-family: var(--mont);
+    background: var(--gd-blue);
+    background: -webkit-linear-gradient(to bottom left, var(--gd-blue) 0%, var(--gd-purple) 100%);
+    background: -moz-linear-gradient(to bottom left, var(--gd-blue) 0%, var(--gd-purple) 100%);
+    background: linear-gradient(to bottom left, var(--gd-blue) 0%, var(--gd-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 24px;
+}
+
+.bio img {
+    max-height: 250px;
+    margin-top: 24px;
+}
+
+.posts {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.offset .limiter {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .offset .limiter {
+        width: 60vw;
+    }
+}

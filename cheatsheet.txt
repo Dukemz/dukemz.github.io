@@ -1,0 +1,175 @@
+Woooooooooooooooooo
+
+this is just a file that explains the process of actually doing a post thing
+
+ok
+
+so
+
+firstly
+
+in /posts make a folder for the year, then one for the month, then one for the day etc...
+eg a post made on 31st Jan 2022 would be in /posts/22/1/31/
+in that day directory, make another directory that can be the bit at the end of the url
+i normally use a couple words from the post title but you can really do whatever you want
+so you end up with something like /posts/22/1/31/oo-fancy-post-thing/
+
+THEN:
+go to /posts/meta.json
+add a new element to the top of the array (elements at the top of the array get put further up the page)
+the element:
+{
+    "title": "full title of the post, required"
+    "link": "the RELATIVE path to the actual post page. in the example i used this would be /posts/22/1/31/oo-fancy-post-thing/ (last slash can either be there or not be there, it doesn't really matter)"
+    "preview": "the text underneath the title on the homepage, is optional"
+    "date": actual number, do a quick new Date().getTime() to see what to put here. is optional
+    "image": "url of an image to display. can be relative or absolute"
+}
+
+that'll:
+a) make the thing appear on the homepage
+b) make the date actually work on the post page
+
+right now we actually make the post page
+
+copy /posts/emptytemplate.html to the directory you made earlier and rename it to index.html
+so we now have /posts/22/1/31/oo-fancy-post-thing/index.html
+
+
+
+<head></head> TIMEEEEEEEEEEEEEEEEEEEE
+you're gonna be typing the same thing over and over again basically
+
+first <title>
+you'll notice i've put some subtle hints as to where to put stuff in the file
+yeah that'll be self explanatory when you see it
+
+if you want you can change <meta name="theme-color">, that's the meta tag that defines which colour to use in things like discord embeds
+
+you'll then have to go through the meta tags under <!-- primary meta tags -->, <!-- open graph --> and <!-- twitter -->
+i've put placeholders in all those so you know what to put in each one
+
+you can ignore the rest of the contents of the <head> tag
+
+
+
+<header></header> TIMEEEEEEEEEEEEEEEEEEEE
+find <header>, it should be around line 81
+you'll then see some more of my subtle hints as to where to put stuff for the article title and subtitle
+after filling those in you can ignore everything under the <!-- SHARING --> thing until you see <!-- HEADER IMAGE -->
+you can change the header image by changing the url in the div below that comment
+you can comment out or delete that div if you don't want a header image
+</header>
+
+
+
+<main></main> TIMEEEEEEEEEEEEEEEEEEEE
+so
+TEXT:
+if you want text you have two types:
+a) text
+b) code
+both types have to be within a div with the classes "container text-container"
+you don't need an individual container for each bit of text, but you'll need to put things like images and videos in other types of containers
+eg say you wanted a bit of text, then a gap for a paragraph break, then some more text, then some code, then some more text:
+
+<div class="container text-container>
+
+    <p>
+        woo first paragraph can go here
+    </p>
+
+    <p>
+        ooh look another paragraph
+    </p>
+
+    <!-- CODE BLOCK: any whitespace in this will appear on the page, so don't add extra tabs or \ns. -->
+    <pre>
+        <!-- set the language in this class thing, it should use the same things as discord -->
+        <code class="language-js">let thing = document.getElementById("hi");
+thing.innerHTML = "ooh look a code block";
+// code blocks look really weird in html because you can't have indentation as all the indentation and line breaks
+// actually get displayed on the page</code>
+    </pre>
+
+    <p>
+        aaaaaand more normal text after the code <br>
+        you can do all the normal text stuff like <i>italics</i> <b>bold</b> <del>strikethrough</del> here
+    </p>
+
+</div>
+
+
+IMAGES:
+images are arguably easier than text
+the only thing to remember is to make sure to not put one container inside another
+eg if you were writing some text, don't try to put the image inside the <div class="container text-container"></div> as that'll cause it to have a fit
+
+image without caption:
+<div class="container image-container">
+    <div class="d-flex justify-content-center">
+        <img src="!!! IMAGE URL !!!">
+    </div>
+</div>
+
+image with caption:
+<div class="container image-container">
+    <div class="d-flex justify-content-center">
+        <img src="!!! IMAGE URL !!!">
+    </div>
+    <div class="container text-container">
+        <p>!!! CAPTION !!!</p>
+    </div>
+</div>
+
+so say you wanted some text, then an image with a caption, then some more text:
+<div class="container text-container">
+    <p>
+        woo text
+    </p>
+</div>
+<div class="container image-container">
+    <div class="d-flex justify-content-center">
+        <img src="/img/duck-og.png">
+    </div>
+    <div class="container text-container">
+        <p>a duck logo spotted in the wild</p>
+    </div>
+</div>
+<div class="container text-container">
+    <p>
+        and we have more text
+    </p>
+</div>
+
+and that's images, one more thing to go
+
+
+
+VIDEOS:
+really simple
+create a <div class="container video-container"></div>
+copy the embed code from youtube
+put it inside the <div class="container video-container"></div>
+--> THEN REMOVE THE width:"---" height:"---" OTHERWISE THE THING WILL HAVE A FIXED SIZE AND WILL LOOK LIKE SHIT <--
+same thing about not nesting containers that applied for images applies for this; make sure to do this outside any other containers
+eg video then some text:
+<div class="container video-container">
+    <iframe src="https://www.youtube.com/embed/0UWpTyuUxNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="container text-container">
+    <p>
+        a perfect example of how to destroy your hearing
+    </p>
+</div>
+
+and that'
+</main>
+
+you can then ignore the two scripts at the bottom of the page, they do things like link copying + sharing to twitter + making the date load automatically
+
+and then you have a full post page
+
+tada
+
+you can have a look at /posts/21/11/13/template/index.html if you want an example of what everything looks like

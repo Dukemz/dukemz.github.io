@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Determination Sans';
+    src: url(/fonts/DeterminationSans.ttf);
+}
+
+@font-face {
+    font-family: 'Determination Mono';
+    src: url(/fonts/DeterminationMono.ttf);
+}
+
+@font-face {
+    font-family: 'Pixel Operator';
+    src: url(/fonts/PixelOperator.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator';
+    src: url(/fonts/PixelOperator-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Pixel Operator Mono';
+    src: url(/fonts/PixelOperatorMono.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator Mono';
+    src: url(/fonts/PixelOperatorMono-Bold.ttf);
+    font-weight: bold;
+}
+
+:root {
+    /* fonts */
+    --dt-sans: 'Determination Sans', sans-serif;
+    --dt-mono: 'Determination Mono', monospace;
+    --po-sans: 'Pixel Operator', sans-serif;
+    --po-mono: 'Pixel Operator Mono', monospace;
+    --mont: 'Montserrat', sans-serif;
+
+    /* colours */
+    --bf-black: #000000;
+    --bf-white: #f1f1f1;
+    --bf-dark-grey: #3f3f3f;
+    --bf-light-grey: #7f7f7f;
+    --gd-blue: #0bb8fd;
+    --gd-purple: #5a42ec;
+}
+
+body {
+    font-family: var(--po-sans);
+    background-color: var(--bf-black);
+    color: var(--bf-white);
+}
+
+nav {
+    z-index: 999;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--dt-mono);
+}
