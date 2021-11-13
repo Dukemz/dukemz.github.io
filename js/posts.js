@@ -47,7 +47,7 @@ function generatePost(object) {
             <!-- POST PREVIEW -->
             <div class="post-text-container">
                 <!-- POST TITLE -->
-                <h4>${object.title}</h4>
+                <h4 title="${object.title}">${object.title}</h4>
                 ${object.preview ? `<!-- POST TEXT -->
                 <p>${object.preview}</p>` : ""}
             </div>
