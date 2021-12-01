@@ -5,6 +5,7 @@
     background-color: var(--bf-black);
     cursor: pointer;
     margin-bottom: 12px;
+    float: right;
 }
 
 @media (min-width: 768px) {
