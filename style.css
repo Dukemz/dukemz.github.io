@@ -18,6 +18,7 @@
     background: -moz-linear-gradient(to bottom left, var(--gd-blue) 0%, var(--gd-purple) 100%);
     background: linear-gradient(to bottom left, var(--gd-blue) 0%, var(--gd-purple) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 24px;
 }
