@@ -7,7 +7,7 @@ async function loadPosts(divs, limit) {
     for (let i = 0; i < limit; i++) {
         if (!data[i]) continue;
         let post = generatePost(data[i])
-        $(divs[divIndex]).append(post);
+        $(divs[divs.length - divIndex - 1]).append(post);
         $(post).click(() => document.location.href = data[i].link);
         divIndex++;
         if (divIndex == divs.length) divIndex = 0;
