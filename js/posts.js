@@ -26,7 +26,7 @@ function generatePost(object) {
                 <p>${object.preview}</p>` : ""}
             </div>
             ${object.time != undefined ? `
-            <div class="post-info-container d-flex justify-content-between">
+            <div class="post-info-container d-flex justify-content-end">
                 <div class="date">
                     ${new Date(object.time).toLocaleDateString()}
                 </div>
