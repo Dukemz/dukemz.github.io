@@ -1,4 +1,4 @@
-# [dukemz.github.io](dukemz.github.io)
+# [dukemz.github.io](https://dukemz.github.io)
 yeah it's my website
 
 i designed it, technobiscuit coded almost all of it
