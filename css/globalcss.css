@@ -81,3 +81,9 @@ a {
     text-decoration: underline var(--gd-blue);
     text-decoration-thickness: 1px;
 }
+
+/* Please don't murder me TB */
+@media (min-width: 992px) {
+    .egg {
+        font-size: 21px;
+    }
