@@ -84,6 +84,6 @@ a {
 
 /* Please don't murder me TB */
 @media (min-width: 992px) {
-    .egg {
+    .pagetext {
         font-size: 21px;
     }
