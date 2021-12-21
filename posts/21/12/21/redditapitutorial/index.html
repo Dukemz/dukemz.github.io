@@ -110,15 +110,22 @@
         <!-- actual post content is here -->
         <main>
            <div class="container text-container">
-               <p>
-                   Hey, Dukemz here again! Someone I know asked me to make this tutorial, so I might as well put it here too for anyone interested. Just bear in mind that this is not an advanced tutorial and requires you to at least have some basic knowledge of programming first. I'll be going over how to get posts from a subreddit and get image links from each post.
-               </p>
-               <h1>Requirements</h1>
-               <p>
-                   This tutorial requires you have a basic knowledge of how JSON works. You'll also need to know how to make HTTPS requests using a library/programming language of your choice, as that's how we'll be retrieving data from the API. With that out of the way, here's a basic tutorial on how to get Reddit post data from the API!
-               </p>
-               <h1>Where do we fetch from?</h1>
-               <p>Assuming you know how to make a HTTPS GET request, set up your code to fetch from <b>https://www.reddit.com/r/&lt;SUBREDDITNAME&gt;/hot/.json?limit=100</b>. Make sure to replace <b>&lt;SUBREDDITNAME&gt;</b> with the name of the subreddit you want to get posts from. <b>?limit=100</b> tells Reddit to send us 100 posts which we can pick randomly from (not doing this will result in it only sending the same single post) and <b>/hot/</b> means we'll be fetching from the hottest posts! You can replace this with any category you'd like though.</p>
+                <p>
+                    Hey, Dukemz here again! Someone I know asked me to make this tutorial, so I might as well put it here too for anyone interested. Just bear in mind that this is not an advanced tutorial and requires you to at least have some basic knowledge of programming first. I'll be going over how to get posts from a subreddit and get image links from each post.
+                </p>
+                <h1>Requirements</h1>
+                <p>
+                    This tutorial requires you have a basic knowledge of how JSON works. You'll also need to know how to make HTTPS requests using a library/programming language of your choice, as that's how we'll be retrieving data from the API. With that out of the way, here's a basic tutorial on how to get Reddit post data from the API!
+                </p>
+                <h1>Where do we fetch from?</h1>
+                <p>
+                    Assuming you know how to make a HTTPS GET request, set up your code to fetch from the following:<br><b>https://www.reddit.com/r/&lt;SUBREDDITNAME&gt;/hot/.json?limit=100</b><br>Make sure to replace <b>&lt;SUBREDDITNAME&gt;</b> with the name of the subreddit you want to get posts from. <b>?limit=100</b> tells Reddit to send us 100 posts which we can pick randomly from (not doing this will result in it only sending the same single post) and <b>/hot/</b> means we'll be fetching from the hottest posts! You can replace this with any category you'd like though.
+                </p>
+                <h1>Parsing the response</h1>
+                <p>
+                    The post data is contained in <b>&lt;RESPONSE&gt;.data.children</b> in the form of an array. For example, to retrieve the first post, we'd use <b>&lt;RESPONSE&gt;.data.children[0].data</b>. This post contains several properties, but the ones you'll likely find useful are:
+                </p>
+            
            </div>
         </main>
 
