@@ -115,8 +115,10 @@
                </p>
                <h1>Requirements</h1>
                <p>
-                   This tutorial requires you have a basic knowledge of how JSON works. You'll also need to know how to make HTTPS requests using any library/programming language of your choice, as that's how we'll be retrieving data from the API.
+                   This tutorial requires you have a basic knowledge of how JSON works. You'll also need to know how to make HTTPS requests using a library/programming language of your choice, as that's how we'll be retrieving data from the API. With that out of the way, here's a basic tutorial on how to get Reddit post data from the API!
                </p>
+               <h1>Where do we fetch from?</h1>
+               <p>Assuming you know how to make a HTTPS GET request, set up your code to fetch from <b>https://www.reddit.com/r/&lt;SUBREDDITNAME&gt;/hot/.json?limit=100</b>. Make sure to replace <b>&lt;SUBREDDITNAME&gt;</b> with the name of the subreddit you want to get posts from. <b>?limit=100</b> tells Reddit to send us 100 posts which we can pick randomly from (not doing this will result in it only sending the same single post) and <b>/hot/</b> means we'll be fetching from the hottest posts! You can replace this with any category you'd like though.</p>
            </div>
         </main>
 
