@@ -89,7 +89,7 @@
                     <div class="d-none d-sm-flex justify-content-between header-sharing w-100">
                         <div class="text-start text-sm-end"><a data-bs-toggle="tooltip" title="some time in the past" class="date"></a></div>
                         <div class="d-flex justify-content-start justify-content-sm-end">
-                            <a href="#" class="tw-share" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="tw-share" title="Share to Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
                             <a data-bs-toggle="tooltip" title="Copy link"><i class="fas fa-link article-link-copy"></i></a>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                 <div class="d-flex d-sm-none flex-column justify-content-center header-sharing" style="margin-top: 12px;">
                     <div class="text-start text-sm-end"><a data-bs-toggle="tooltip" title="some time in the past" class="date"></a></div>
                     <div class="d-flex justify-content-start justify-content-sm-end">
-                        <a href="#" class="tw-share" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="tw-share" title="Share to Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a data-bs-toggle="tooltip" title="Copy link"><i class="fas fa-link article-link-copy"></i></a>
                     </div>
                 </div>
@@ -128,10 +128,10 @@
                     The post data is contained in <b>&lt;RESPONSE&gt;.data.children</b> in the form of an array. For example, to retrieve the first post, we'd use:
                     <br><b>&lt;RESPONSE&gt;.data.children[0].data</b>
                     <br>This post contains a lot of properties, but the ones you'll likely find useful are:
-                    <br><b>• &lt;POST&gt;.permalink</b> - The link to the post. Use this format to make a valid link: <b>https://reddit.com&lt;PERMALINK&gt;</b>
-                    <br><b>• &lt;POST&gt;.title</b> - The title of the post
-                    <br><b>• &lt;POST&gt;.author</b> - The username of the person who made the post. To make a link to their profile, use this format: <b>https://reddit.com/u/&lt;AUTHOR&gt;</b>
-                    <br><b>• &lt;POST&gt;.url</b> - The content of the post - could be a link to an image, a video or a gallery
+                    <br><b>- &lt;POST&gt;.permalink</b> - The link to the post. Use this format to make a valid link: <b>https://reddit.com&lt;PERMALINK&gt;</b>
+                    <br><b>- &lt;POST&gt;.title</b> - The title of the post
+                    <br><b>- &lt;POST&gt;.author</b> - The username of the person who made the post. To make a link to their profile, use this format: <b>https://reddit.com/u/&lt;AUTHOR&gt;</b>
+                    <br><b>- &lt;POST&gt;.url</b> - The content of the post - could be a link to an image, a video or a gallery
                 </p>
             
            </div>
