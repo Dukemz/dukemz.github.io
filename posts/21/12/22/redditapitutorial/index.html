@@ -141,7 +141,8 @@
                     <br><b>- &lt;POST&gt;.data.permalink</b> - The link to the post. Use this format to make a valid link: <b>https://reddit.com&lt;PERMALINK&gt;</b>
                     <br><b>- &lt;POST&gt;.data.title</b> - The title of the post
                     <br><b>- &lt;POST&gt;.data.author</b> - The username of the person who made the post. To make a link to their profile, use this format: <b>https://reddit.com/u/&lt;AUTHOR&gt;</b>
-                    <br><b>- &lt;POST&gt;.data.url</b> - The content of the post - could be a link to an image, a video or a gallery
+                    <br><b>- &lt;POST&gt;.data.selftext</b> - The text in the post, if any
+                    <br><b>- &lt;POST&gt;.data.url</b> - The media content of the post, if any - could be a link to an image, a video or a gallery
                 </p>
                 <h1>Dealing with galleries</h1>
                 <p>
@@ -149,19 +150,19 @@
                 </p>
                 <h1>An example using discord.js</h1>
                 <p>
-                    Of course these methods can be used for whatever application you like, but I'll show you an example of my own that uses the discord.js library to construct an embed.
+                    Of course these methods can be used for whatever application you like, but I'll show you an example of my own that uses the discord.js library to construct a Discord messsage embed. It displays the title, author, and media content, all formatted neatly!
                 </p>
                 <pre><code class="language-js">const imageEmbed = new MessageEmbed()
-.setTitle(post.title)
-.setURL("https://reddit.com" + post.permalink)
-.setColor("RANDOM")
-.setAuthor(`u/${post.author}`, '', `https://reddit.com/u/${post.author}`)
-.setImage(post.url)
-.setFooter(`r/duck • Took ${Date.now() - ts}ms`, client.user.avatarURL())
-.setTimestamp();
+    .setTitle(post.title)
+    .setURL("https://reddit.com" + post.permalink)
+    .setColor("RANDOM")
+    .setAuthor(`u/${post.author}`, '', `https://reddit.com/u/${post.author}`)
+    .setImage(post.url)
+    .setFooter(`r/duck • Took ${Date.now() - ts}ms`, client.user.avatarURL())
+    .setTimestamp();
                 </code></pre>
                 <p>
-                    Anyway, that's all the useful information I have for now. If you found this tutorial helpful at all or have anything to say, please drop by my Discord server (link on the homepage) and say hi! I'd love to hear feedback on how I can improve this tutorial/site further (though again, it is only a basic tutorial so I don't want to go into too much detail). And of course, if you know of anyone who might benefit from this, please send it to them! It would mean a lot to me.
+                    Anyway, that's all the useful information I have for now. If you found this tutorial helpful at all or have anything to say, please drop by my Discord server (link on the homepage) and say hi! I'd love to hear feedback on how I can improve this tutorial/site further (though again, it is only a basic tutorial so I don't want to go into too much detail). And of course, if you know of anyone who might benefit from this, please send this site to them! It would mean a lot to me.
                 </p>
                 <p>
                     If you got all the way to the bottom of this page, thank you for reading :)
