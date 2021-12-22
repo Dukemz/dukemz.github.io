@@ -119,11 +119,19 @@
                 </p>
                 <h1>Where do we fetch from?</h1>
                 <p>
-                    Assuming you know how to make a HTTPS GET request, set up your code to fetch from the following:<br><b>https://www.reddit.com/r/&lt;SUBREDDITNAME&gt;/hot/.json?limit=100</b><br>Make sure to replace <b>&lt;SUBREDDITNAME&gt;</b> with the name of the subreddit you want to get posts from. <b>?limit=100</b> tells Reddit to send us 100 posts which we can pick randomly from (not doing this will result in it only sending the same single post) and <b>/hot/</b> means we'll be fetching from the hottest posts! You can replace this with any category you'd like though.
+                    Assuming you know how to make a HTTPS GET request, set up your code to fetch from the following:
+                    <br><b>https://www.reddit.com/r/&lt;SUBREDDITNAME&gt;/hot/.json?limit=100</b>
+                    <br>Make sure to replace <b>&lt;SUBREDDITNAME&gt;</b> with the name of the subreddit you want to get posts from. <b>?limit=100</b> tells Reddit to send us 100 posts which we can pick randomly from (not doing this will result in it only sending the same single post) and <b>/hot/</b> means we'll be fetching from the hottest posts! You can replace this with any category you'd like though.
                 </p>
                 <h1>Parsing the response</h1>
                 <p>
-                    The post data is contained in <b>&lt;RESPONSE&gt;.data.children</b> in the form of an array. For example, to retrieve the first post, we'd use <b>&lt;RESPONSE&gt;.data.children[0].data</b>. This post contains several properties, but the ones you'll likely find useful are:
+                    The post data is contained in <b>&lt;RESPONSE&gt;.data.children</b> in the form of an array. For example, to retrieve the first post, we'd use:
+                    <br><b>&lt;RESPONSE&gt;.data.children[0].data</b>
+                    <br>This post contains a lot of properties, but the ones you'll likely find useful are:
+                    <br><b>• &lt;POST&gt;.permalink</b> - The link to the post. Use this format to make a valid link: <b>https://reddit.com&lt;PERMALINK&gt;</b>
+                    <br><b>• &lt;POST&gt;.title</b> - The title of the post
+                    <br><b>• &lt;POST&gt;.author</b> - The username of the person who made the post. To make a link to their profile, use this format: <b>https://reddit.com/u/&lt;AUTHOR&gt;</b>
+                    <br><b>• &lt;POST&gt;.url</b> - The content of the post - could be a link to an image, a video or a gallery
                 </p>
             
            </div>
