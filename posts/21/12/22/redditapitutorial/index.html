@@ -146,7 +146,7 @@
                 </p>
                 <h1>Dealing with galleries</h1>
                 <p>
-                    If a post happens to be a gallery (contains multiple images), it will have the attribute <b>&lt;POST&gt;data.is_gallery</b>. Each gallery image is stored under an object in <b>&lt;POST&gt;data.media_metadata</b>. If we get the data of one of the values of the gallery objects stored here, the image URL can be accessed from <b>&lt;GALLERY_OBJECT&gt;.s.u</b>. However, be warned - the URL is encoded, <b>so you will need to remove every occurence of amp; that appears in the URL for it to be valid!</b>
+                    If a post happens to be a gallery (contains multiple images), it will have the attribute <b>&lt;POST&gt;.data.is_gallery</b>. Each gallery image is stored under an object in <b>&lt;POST&gt;.data.media_metadata</b>. If we get the data of one of the values of the gallery objects stored here, the image URL can be accessed from <b>&lt;GALLERY_OBJECT&gt;.s.u</b>. However, be warned - the URL is encoded, <b>so you will need to remove every occurence of amp; that appears in the URL for it to be valid!</b>
                 </p>
                 <h1>An example using discord.js</h1>
                 <p>
