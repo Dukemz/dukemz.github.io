@@ -1,5 +1,5 @@
 
-.vibrate {
+img {
     transform: scale(0.9);
     cursor: pointer;
     user-select: none;
@@ -9,11 +9,11 @@
     -moz-user-drag: none;
     -moz-user-select: none;
 }
-.vibrate:hover {
+img:hover {
     animation: brrr 0.2s;
     animation-iteration-count: infinite;
 }
-.vibrate:active, .hell {
+img:active, .hell {
     animation: hyperbrrr 0.1s !important;
     animation-iteration-count: infinite !important;
     filter: saturate(500%) blur(1.2px) !important;
