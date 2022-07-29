@@ -74,9 +74,12 @@ const svgPath = (points, command) => {
 const recalcShape = () => {
     // lol sorry for putting this here - duck
     const sploosh = splashes[Math.floor(Math.random()*splashes.length)];
-    let splText = document.getElementById("randomSplash")?.innerHTML;
-    console.log(splText)
-    if(splText !== undefined) splText = sploosh;
+    
+    // biscuit to the rescue with jquery (hopefully)
+    if ($("#randomSplash").length) $("#randomSplash").html(sploosh);
+    //let splText = document.getElementById("randomSplash")?.innerHTML;
+    //console.log(splText)
+    //if(splText !== undefined) splText = sploosh;
     
     $(".shape-thing").empty();
     let points = [[0, 0]];
