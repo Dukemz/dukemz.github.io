@@ -1,3 +1,9 @@
+const splashes = [
+    "Any computer is a laptop if you're brave enough."
+]
+const spl = splashes[Math.floor(Math.random()*splashes.length)]
+// everything below here is tb's stuff
+
 // https://francoisromain.medium.com/smooth-a-svg-path-with-cubic-bezier-curves-e37b49d46c74
 const line = (pointA, pointB) => {
     const lengthX = pointB[0] - pointA[0]
