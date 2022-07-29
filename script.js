@@ -16,8 +16,7 @@ const splashes = [
     "Spreading positivity since 2018!",
     "This site uses biscuits... Technobiscuits"
 ]
-const spl = splashes[Math.floor(Math.random()*splashes.length)];
-document.getElementById("randomSplash").innerHTML = spl;
+window.spl = splashes[Math.floor(Math.random()*splashes.length)];
 
 // everything below here is tb's stuff
 
