@@ -1,7 +1,24 @@
+// if you're reading this code, please don't look at all the splash messages here. it spoils the experience of finding new ones :)
 const splashes = [
-    "Any computer is a laptop if you're brave enough."
+    "Dukemz Gaming.",
+    "Any computer is a laptop if you're brave enough.",
+    "Humans are basically cucumbers with anxiety.",
+    // "As seen on TV!",
+    "🗿",
+    "I forgor 💀",
+    "Part of a complete breakfast!",
+    "Batteries not included.",
+    "No artificial flavours or preservatives.",
+    "Not sold separately!",
+    "doot doot",
+    "I can't find the bug spray.",
+    "This gradient is cool.",
+    "Spreading positivity since 2018!",
+    "This site uses biscuits... Technobiscuits"
 ]
-const spl = splashes[Math.floor(Math.random()*splashes.length)]
+const spl = splashes[Math.floor(Math.random()*splashes.length)];
+document.getElementById("randomSplash").innerHTML = spl;
+
 // everything below here is tb's stuff
 
 // https://francoisromain.medium.com/smooth-a-svg-path-with-cubic-bezier-curves-e37b49d46c74
