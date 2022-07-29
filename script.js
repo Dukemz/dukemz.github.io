@@ -14,7 +14,8 @@ window.splashes = [
     "I can't find the bug spray.",
     "This gradient is cool.",
     "Spreading positivity since 2018!",
-    "This site uses biscuits... Technobiscuits"
+    "This site uses biscuits... Technobiscuits",
+    
 ]
 
 // everything below here is tb's stuff
@@ -74,7 +75,7 @@ const recalcShape = () => {
     // lol sorry for putting this here - duck
     const sploosh = splashes[Math.floor(Math.random()*splashes.length)];
     splText = document.getElementById("randomSplash")?.innerHTML;
-    if(splText === null) splText = sploosh;
+    if(splText === undefined) splText = sploosh;
     
     $(".shape-thing").empty();
     let points = [[0, 0]];
