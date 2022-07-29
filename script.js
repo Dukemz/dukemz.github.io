@@ -27,7 +27,7 @@ window.splashes = [
     "dukemz:",
     "dukemz...",
     "dukemz~",
-    "dukemz*"
+    "dukemz*",
     "Llama, llama, duck",
     "Potassium.",
     "The duck ate my homework.",
