@@ -1,5 +1,5 @@
 // if you're reading this code, please don't look at all the splash messages here. it spoils the experience of finding new ones :)
-const splashes = [
+window.splashes = [
     "Dukemz Gaming.",
     "Any computer is a laptop if you're brave enough.",
     "Humans are basically cucumbers with anxiety.",
@@ -16,7 +16,6 @@ const splashes = [
     "Spreading positivity since 2018!",
     "This site uses biscuits... Technobiscuits"
 ]
-window.spl = splashes[Math.floor(Math.random()*splashes.length)];
 
 // everything below here is tb's stuff
 
@@ -72,6 +71,10 @@ const svgPath = (points, command) => {
 //
 
 const recalcShape = () => {
+    // lol sorry for putting this here - duck
+    const sploosh = splashes[Math.floor(Math.random()*splashes.length)];
+    document.getElementById("randomSplash").innerHTML = sploosh;
+    
     $(".shape-thing").empty();
     let points = [[0, 0]];
     for (let y = 0; y < $(document).height() * 6; y += 200) {
