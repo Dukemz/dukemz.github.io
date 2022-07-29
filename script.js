@@ -76,7 +76,7 @@ const recalcShape = () => {
     const sploosh = splashes[Math.floor(Math.random()*splashes.length)];
     let splText = document.getElementById("randomSplash")?.innerHTML;
     console.log(splText)
-    if(splText === undefined) splText = sploosh;
+    if(splText !== undefined) splText = sploosh;
     
     $(".shape-thing").empty();
     let points = [[0, 0]];
