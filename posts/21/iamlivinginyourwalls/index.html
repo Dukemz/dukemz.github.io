@@ -199,6 +199,8 @@
                 let data;
                 await $.getJSON("/posts/meta.json", json => data = json);
                 let meta = data.find(x => x.link.split("/").every((y, i) => y == window.location.pathname.split("/")[i]));
+                // I am living in your walls
+                meta.time = Date.now()
                 if (meta?.time == undefined) return $(".date").text("No date.")
                 try {
                     let time = new Date(meta.time);
@@ -209,6 +211,7 @@
                     return $(".date").text("No date.")
                     console.error(e);
                 }
+                $(".date").text("Now.")
             })
         </script>
     </body>
