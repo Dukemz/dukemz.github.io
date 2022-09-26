@@ -198,9 +198,9 @@
             $(document).ready(async () => {
                 let data;
                 await $.getJSON("/posts/meta.json", json => data = json);
-                let meta = data.find(x => x.link.split("/").every((y, i) => y == window.location.pathname.split("/")[i]));
+                //let meta = data.find(x => x.link.split("/").every((y, i) => y == window.location.pathname.split("/")[i]));
                 // I am living in your walls
-                meta.time = Date.now()
+                let meta = {time: Date.now()}
                 if (meta?.time == undefined) return $(".date").text("No date.")
                 try {
                     let time = new Date(meta.time);
