@@ -3,7 +3,7 @@ window.splashes = [
     "Dukemz Gaming",
     "Any computer is a laptop if you're brave enough!",
     "Humans are basically cucumbers with anxiety.",
-    "I am living in your walls.", // note to self: make this one link to the hidden page
+    "<a href='https://dukemz.github.io/posts/21/iamlivinginyourwalls/'>I am living in your walls.</a>",
     "🗿",
     "🦆",
     "🎷🦆",
