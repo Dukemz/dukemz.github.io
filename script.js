@@ -1,4 +1,6 @@
 // if you're reading this code, please don't look at all the splash messages here. it spoils the experience of finding new ones :)
+
+
 window.splashes = [
     "Dukemz Gaming",
     "Any computer is a laptop if you're brave enough!",
@@ -34,6 +36,7 @@ window.splashes = [
     "dukemz...",
     "dukemz~",
     "dukemz*",
+    "Error on line 37. Reason: Could not think of a splash.",
     "Llama, llama, duck",
     "Potassium.",
     "plus9 when?",
@@ -80,6 +83,7 @@ window.splashes = [
     "Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo.",
     "Let in some sun!",
     "Boss rush time!",
+    "It's dangerous to go alone, take <a href='/img/duck.jpg'>this!</a>",
     "I ran out of beans.",
     "Eating clocks is a very time consuming process.",
     "The most website ever!",
@@ -202,7 +206,7 @@ window.splashes = [
     "Each Peach Pear Plum",
     "uz.demk",
     "<a href='https://www.youtube.com/watch?v=-1oRezdQEzM'>]]]</a>",
-    "Me has ungood inglish,",
+    "Me has ungood inglish.",
     "Insectophobe's nightmare.",
     "[REDUCKTED]",
     "Please keep hands inside the cart at all times."
@@ -211,7 +215,7 @@ window.splashes = [
     "Don't feed ducks bread.",
     "It's-a-me!",
     "[object Object]",
-    "type(Nan) = number",
+    "typeof(Nan) = number;",
     "Now in 2D!"
     "stonks",
     "Eat your veggies!",
@@ -220,31 +224,31 @@ window.splashes = [
     "Welcome to Dukemz's Pizza Emporium, how may we help you?",
     "Knock knock.",
     "Why did the duck cross the road???????",
-    "<a href='https://www.foolproofme.org/articles/395-the-dangers-of-randomly-clicking-links'>CLICK HERE!!!</a>",
-    "Did you know: there is only one splash with the word 'deposit' in it",
+    "<a href='https://bit.ly/3EjjNW8'>CLICK HERE!!!</a>",
+    "Did you know?\nThere is only one splash with the word 'deposit' in it.",
     "xnopyt",
-    "Why am I over here?                                                                  ",
-    "Error on line 227. Reason: Could not think of a splash.",
+    // this one might break formatting
+    // "Why am I over here?                                                                  ",
     "Splash Challenge: Do a push-up."
     "camelCaseIsAReallyUsefulMethodForSeparatingWordsWithoutSpaces",
     "Take your age. Add 2. Subtract 2. That's your age.",
     "This splash has only 41 characters in it.",
     "Do I smell burning chicken?",
-    "19th of August 2024 17:32:47:10262734",
+    "19th of August 2024 17:32:47:10262734", // what
     "Don't forget.",
     "#stopusinghashtags",
     "smh forgot to capitalise dukemz.",
     "ping-pong = png(i-o)",
     "colourize",
-    "colorise",
+    "colorise", // american spelling
     "dUkEmZ.",
-    "return null",
+    "return null;",
     "<a href='https://dukemz.github.io/whyareyoulookinghere'>[Hyperlink Blocked]</a>",
     "Greetings traveller, rest here for a while.",
     "3... 2... 1...",
     "Splash Challenge: Tidy your room/workspace.",
-    "owo", // im sorry
-    "Minced garlic.",
+    // "owo", // no.
+    "Minced garlic!",
     "Are you ready kids?",
     "Heyo!",
     "What... cactus..?",
@@ -259,7 +263,7 @@ window.splashes = [
     "Peace, love, and ducks.",
     "Splash Challenge: Touch grass (outside)",
     "You are now breathing manually.",
-            "Forgot to indent correctly.     ",
+    //        "Forgot to indent correctly.     ", // also might break formatting
     "Now with even more bugs!",
     "It's not a feature, it's a bug.",
     "Spiderduck, spiderduck, naturally has webbed feet.",
@@ -268,21 +272,21 @@ window.splashes = [
     "Chocolate can be good for you, but be careful!",
     "splash_number += 1",
     "Biscuits - dunk 'em.",
-    "100% random",
+    "100% random!",
     "Can you find a secret?",
-    "Still on the duck hunt.",
+    "Still on the duck hunt.\n(No ducks were harmed in the making of this splash text.)",
     "I'm a spring duckling and I'm having a ball!",
-    "Lookie lookie it's a cookie 🍪 ",
+    "Lookie lookie it's a cookie 🍪",
     "I'm ready for a break... <br>Here it is.",
-    "Melee?!",
+    "Melee?!", // what
     "Travelling back in time since 2034!",
     "Freshly-baked biscuits!",
     "Computer will.",
     "Computer knows.",
     "You've been put on hold, someone will see you shortly.",
-    "Hello to see you now, goodbye to see you later."\
+    "Hello to see you now, goodbye to see you later."
     // ljaldy end 
-]
+].push(`There are ${splashes.length} splash texts. Isn't that weird?`);
 
 // everything below here is tb's stuff
 
