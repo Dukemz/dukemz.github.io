@@ -209,14 +209,14 @@ window.splashes = [
     "Me has ungood inglish.",
     "Insectophobe's nightmare.",
     "[REDUCKTED]",
-    "Please keep hands inside the cart at all times."
+    "Please keep hands inside the cart at all times.",
     "Duke of the MZ",
     "How did we get here?",
     "Don't feed ducks bread.",
     "It's-a-me!",
     "[object Object]",
     "typeof(Nan) = number;",
-    "Now in 2D!"
+    "Now in 2D!",
     "stonks",
     "Eat your veggies!",
     "A duck walked up to the lemonade stand...",
@@ -229,7 +229,7 @@ window.splashes = [
     "xnopyt",
     // this one might break formatting
     // "Why am I over here?                                                                  ",
-    "Splash Challenge: Do a push-up."
+    "Splash Challenge: Do a push-up.",
     "camelCaseIsAReallyUsefulMethodForSeparatingWordsWithoutSpaces",
     "Take your age. Add 2. Subtract 2. That's your age.",
     "This splash has only 41 characters in it.",
