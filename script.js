@@ -286,7 +286,8 @@ window.splashes = [
     "You've been put on hold, someone will see you shortly.",
     "Hello to see you now, goodbye to see you later."
     // ljaldy end 
-].push(`There are ${splashes.length} splash texts. Isn't that weird?`);
+]
+splashes.push(`There are ${splashes.length} splash texts. Isn't that weird?`);
 
 // everything below here is tb's stuff
 
