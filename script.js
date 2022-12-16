@@ -171,7 +171,10 @@ window.splashes = [
     "You will never find out what the numbers mean.",
     "412: I'm a teapot!",
     "I'm going to invent Teascript.",
-    "",
+    " ",
+    "gloopchita",
+    "There may be birds trapped in my ribcage.",
+    "Beware of robot dogs.",
     // ljaldy start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
     "Converting pasta to concrete since 2021!",
