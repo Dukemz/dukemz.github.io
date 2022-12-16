@@ -175,7 +175,7 @@ window.splashes = [
     "gloopchita",
     "There may be birds trapped in my ribcage.",
     "Beware of robot dogs.",
-    "Why is the dog saying 'Kablinky' while holding a syringe?"
+    "Why is the dog saying 'Kablinky' while holding a syringe?",
     // ljaldy start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
     "Converting pasta to concrete since 2021!",
