@@ -176,6 +176,7 @@ window.splashes = [
     "There may be birds trapped in my ribcage.",
     "Beware of robot dogs.",
     "Why is the dog saying 'Kablinky' while holding a syringe?",
+    "Welcome to the world of coding! Survive while you can.",
     // ljaldy start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
     "Converting pasta to concrete since 2021!",
