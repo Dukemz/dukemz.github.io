@@ -1,0 +1,37 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: black;
+}
+
+p {
+  color: white;
+}
+
+.DIAG::before {
+  color: white;
+  content: ">>> ";
+}
+
+.PROM {
+  color: #E06666;
+}
+
+.DYS {
+  color: yellow;
+}
+
+.ELN {
+  color: lightyellow;
+}
+
+.ARC {
+  color: orangered;
+}
+
+.PLEI {
+  color: turquoise;
+}
+
+.ALC {
+  color: cornflowerblue;
+}
