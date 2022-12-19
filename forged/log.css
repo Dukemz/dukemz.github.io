@@ -1,4 +1,6 @@
 body {
+  height: 100%;
+  overflow: auto;
   font-family: 'Nunito', sans-serif;
   background-color: black;
 }
