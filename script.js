@@ -178,6 +178,7 @@ window.splashes = [
     "Why is the dog saying 'Kablinky' while holding a syringe?",
     "Welcome to the world of coding! Survive while you can.",
     '<a href="https://youtu.be/-O1wszcVF1c">https://youtu.be/-O1wszcVF1c</a>',
+    '<a href="https://youtu.be/-O1wszcVF1c">reads the entire tpmc wiki page in vc</a>',
     // ljaldy start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
     "Converting pasta to concrete since 2021!",
