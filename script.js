@@ -407,7 +407,8 @@ window.splashes = [
     "gg ngl gtg brb ttyl cya gn"
     // ljaldy end (epic)
 ]
-splashes.push(`There are ${splashes.length} splash texts. Isn't that weird?`);
+splashes.push(`There are ${splashes.length + 2} splash texts. Isn't that weird?`);
+splashes.push(`The chance of you seeing this message is 1 in ${splashes.length + 1}.`);
 
 // everything below here is tb's stuff
 
