@@ -243,6 +243,22 @@ window.splashes = [
     "It's all good man.",
     "deezemz.",
     "If Maths didn't exist, you wouldn't be able to count the words on your English paper.",
+    "ಠ_ಠ",
+    "The chicken is in the oven.",
+    "The pizza'll be ready any minute now, trust me...",
+    "<a href='https://prominia.technobiscuit.uk'>prominia simulator</a>",
+    "THERE WILL BE SHED (SHED)",
+    "brrrt",
+    "Today is today!",
+    "HEHEHEHA",
+    "GRRR",
+    "That muffin is looking awfully like a hamster",
+    "fr e sh a voca do",
+    "✈",
+    "The size of this W exceeds the tallest skyscraper.",
+    "I wonder if we can reach 1000 splash messages...",
+    "🤨📸",
+    "There is no Easter Bunny, there is no Tooth Fairy, and there is no Queen of England.",
     // ljaldy start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
     "Converting pasta to concrete since 2021!",
@@ -459,6 +475,7 @@ window.splashes = [
 ]
 splashes.push(`There are ${splashes.length + 2} splash texts. Isn't that weird?`);
 splashes.push(`The chance of you seeing this message is 1 in ${splashes.length + 1}.`);
+// in the future - put date specific splashes here
 
 // everything below here is tb's stuff
 
