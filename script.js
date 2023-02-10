@@ -241,6 +241,8 @@ window.splashes = [
     "Click the logo for another splash without reloading!",
     "This is bromine... wait no sorry that was soy sauce.",
     "It's all good man.",
+    "deezemz.",
+    "If Maths didn't exist, you wouldn't be able to count the words on your English paper.",
     // ljaldy start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
     "Converting pasta to concrete since 2021!",
