@@ -181,7 +181,7 @@ window.splashes = [
     "You will never find out what the numbers mean.",
     "418: I'm a teapot!",
     "I'm going to invent Teascript.",
-    " ", // you are a menace dukemz
+    "<br>", // you are a menace dukemz
     "gloopchita",
     "There may be birds trapped in my ribcage.",
     "Beware of robot dogs.",
@@ -259,6 +259,11 @@ window.splashes = [
     "I wonder if we can reach 1000 splash messages...",
     "🤨📸",
     "There is no Easter Bunny, there is no Tooth Fairy,<br>and there is no Queen of England.",
+    "You just got SVG-vectored!",
+    "💌",
+    "Your door was locked!",
+    "Please get in the bag!",
+    "Biggity Big egg the egg gets Bigger",
     // ljaldy start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
     "Converting pasta to concrete since 2021!",
