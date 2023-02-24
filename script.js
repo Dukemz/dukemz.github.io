@@ -326,7 +326,7 @@ window.splashes = [
     "Don't feed ducks bread.",
     "It's-a-me!",
     "[object Object]",
-    "typeof(Nan) = number;",
+    "typeof(NaN) = number;",
     "Now in 2D!",
     "stonks",
     "Eat your veggies!",
