@@ -116,6 +116,7 @@ window.splashes = [
     "YIPEE",
     "Wheatley crab!",
     "There is no among us joke.",
+    "Don't believe everything on the internet!",
     "25th Greek island!",
     "WALL-E is the best robot.",
     "If you're seeing this, that means you exist!",
