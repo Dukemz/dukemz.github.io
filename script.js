@@ -269,7 +269,7 @@ window.splashes = [
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
     "Converting pasta to concrete since 2021!",
     "sometimes gaming.",
-    "Autumn leaves are falling down.",
+    "In the autumn leaves start-a falling...",
     "bn fn",
     "Ping!",
     "Pong!",
