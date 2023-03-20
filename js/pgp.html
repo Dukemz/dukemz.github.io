@@ -39,7 +39,9 @@
             signingKeys: privateKey // optional
         });
         console.log(encrypted); // '-----BEGIN PGP MESSAGE ... END PGP MESSAGE-----'
-
+        
+        // DECRYPT
+        
         const message = await openpgp.readMessage({
             armoredMessage: encrypted // parse armoured message
         });
