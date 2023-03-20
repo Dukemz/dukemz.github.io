@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>pgp</title>
+  <script src="openpgp.min.js"></script>
+ </head>
+<body>
+  <script>
+    (async () => {
+    // put keys in backtick (``) to avoid errors caused by spaces or tabs
+    const publicKeyArmored = `-----BEGIN PGP PUBLIC KEY BLOCK-----
+...
+-----END PGP PUBLIC KEY BLOCK-----`;
+    const privateKeyArmored = `-----BEGIN PGP PRIVATE KEY BLOCK-----
+...
+-----END PGP PRIVATE KEY BLOCK-----`; // encrypted private key
+    const passphrase = `1234`; // what the private key is encrypted with
+
+    const publicKey = await openpgp.readKey({ armoredKey: publicKeyArmored });
+
+    const privateKey = await openpgp.decryptKey({
+        privateKey: await openpgp.readPrivateKey({ armoredKey: privateKeyArmored }),
+        passphrase
+    });
+
+    const encryptedAndSignedMessage = `-----BEGIN PGP MESSAGE-----
+...
+-----END PGP MESSAGE-----`;
+
+    const message = await openpgp.readMessage({
+        armoredMessage: encryptedAndSignedMessage // parse armored message
+    });
+    // decryption will fail if all signatures are invalid or missing
+    const { data: decrypted, signatures } = await openpgp.decrypt({
+        message,
+        decryptionKeys: privateKey,
+        expectSigned: true,
+        verificationKeys: publicKey, // mandatory with expectSigned=true
+    });
+    console.log(decrypted); // 'Hello, World!'
+})();
+  </script>
+  <p>the funny</p>
+</body>
+</html>
