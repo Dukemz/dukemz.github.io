@@ -6,8 +6,16 @@
 </head>
 <body>
     <p>generate a key</p>
-    <button id="pubkeyDL">Download public key</button> <button id="prvkeyDL">Download private key</button>
-    <script> 
+    <!--<button id="pubkeyDL">Download public key</button> <button id="prvkeyDL">Download private key</button>-->
+    <script>
+        function makeButton(name, data, displayName) {
+            const hiddenElement = document.createElement(name);
+            hiddenElement.href = 'data:attachment/text,' + encodeURI(data);
+            hiddenElement.target = '_blank';
+            hiddenElement.download = `${displayName}.txt`;
+            hiddenElement.innerText = `Download ${displayName}.txt`;
+            return hiddenElement;
+        }
         async function generateKeys() {
             const { privateKey, publicKey, revocationCertificate } = await openpgp.generateKey({
                 type: 'ecc', // Type of the key, defaults to ECC
@@ -20,6 +28,10 @@
             console.log(privateKey);     // '-----BEGIN PGP PRIVATE KEY BLOCK ... '
             console.log(publicKey);      // '-----BEGIN PGP PUBLIC KEY BLOCK ... '
             console.log(revocationCertificate); // '-----BEGIN PGP PUBLIC KEY BLOCK ... '
+            // i'm aware this is the most awful way to code this but whatever
+            const prvKeyElement = makeButton('prvKeyElement', privateKey, "privateKey");
+            const pubKeyElement = makeButton('pubKeyElement', publicKey, "publicKey");
+            const revocElement = makeButton('revocElement', revocationCertificate, "revocationCertificate");
         }
     
         async function encrypt() {
@@ -61,7 +73,7 @@
                 throw new Error('Signature could not be verified: ' + e.message);
             }
         }
-        
+        /*
         document.getElementById('pubkeyDL').addEventListener('click', () => {
             const hiddenElement = document.createElement('a');
             hiddenElement.href = 'data:attachment/text,' + encodeURI(publicKey);
@@ -78,7 +90,8 @@
             hiddenElement.click();
             hiddenElement.remove();
         });
-        
-    </script> 
+        */
+    </script>
+    <button id="generate" onclick="generateKeys()">Generate keys</button>
 </body>
 </html>
