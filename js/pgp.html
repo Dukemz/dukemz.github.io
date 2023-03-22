@@ -5,6 +5,8 @@
     <script src="openpgp.min.js"></script>
 </head>
 <body>
+    <p>generate a key</p>
+    <button id="pubkeyDL">Download public key</button> <button id="prvkeyDL">Download private key</button>
     <script> 
         async function generateKeys() {
             const { privateKey, publicKey, revocationCertificate } = await openpgp.generateKey({
@@ -77,8 +79,6 @@
             hiddenElement.remove();
         });
         
-    </script>
-    <p>generate a key</p>
-    <button id="pubkeyDL">Download public key</button> <button id="prvkeyDL">Download private key</button> 
+    </script> 
 </body>
 </html>
