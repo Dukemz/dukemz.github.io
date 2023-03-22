@@ -8,8 +8,9 @@
     <p>generate a key</p>
     <!--<button id="pubkeyDL">Download public key</button> <button id="prvkeyDL">Download private key</button>-->
     <script>
-        function makeButton(name, data, displayName) {
-            const hiddenElement = document.createElement(name);
+        function makeButton(name, data, displayName) { // note: make "hiddenElement" something better
+            const hiddenElement = document.createElement("button");
+            hiddenElement.id = name;
             hiddenElement.href = 'data:attachment/text,' + encodeURI(data);
             hiddenElement.target = '_blank';
             hiddenElement.download = `${displayName}.txt`;
