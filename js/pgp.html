@@ -41,7 +41,7 @@
             const revocElement = makeButton('revocElement', revocationCertificate, "revocationCertificate");
         }
     
-        async function encrypt() {
+        async function encryptTest() {
             /*
             // put keys in backtick (``) to avoid errors caused by spaces or tabs
             const publicKeyArmored = ``;
@@ -55,11 +55,17 @@
                 passphrase
             });
             */
+            
+            const parsedPublic = await openpgp.readKey({ armoredKey: publicKey });
+            const parsedPrivate = await openpgp.decryptKey({
+                privateKey: await openpgp.readPrivateKey({ armoredKey: privateKey }),
+                "super long and hard to guess secret"
+            });
 
             const encrypted = await openpgp.encrypt({
                 message: await openpgp.createMessage({ text: 'Hello, World!' }), // input as Message object
-                encryptionKeys: publicKey,
-                signingKeys: privateKey // optional
+                encryptionKeys: parsedPublic,
+                signingKeys: parsedPrivate // optional
             });
             console.log(encrypted); // '-----BEGIN PGP MESSAGE ... END PGP MESSAGE-----'
             
@@ -70,8 +76,8 @@
             });
             const { data: decrypted, signatures } = await openpgp.decrypt({
                 message,
-                verificationKeys: publicKey, // optional
-                decryptionKeys: privateKey
+                verificationKeys: parsedPublic, // optional
+                decryptionKeys: parsedPrivate
             });
             console.log(decrypted); // 'Hello, World!'
             // check signature validity (signed messages only)
