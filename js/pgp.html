@@ -39,6 +39,7 @@
         }
     
         async function encrypt() {
+            /*
             // put keys in backtick (``) to avoid errors caused by spaces or tabs
             const publicKeyArmored = ``;
             const privateKeyArmored = ``; // encrypted private key
@@ -50,6 +51,7 @@
                 privateKey: await openpgp.readPrivateKey({ armoredKey: privateKeyArmored }),
                 passphrase
             });
+            */
 
             const encrypted = await openpgp.encrypt({
                 message: await openpgp.createMessage({ text: 'Hello, World!' }), // input as Message object
