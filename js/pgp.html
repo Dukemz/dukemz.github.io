@@ -9,12 +9,14 @@
     <!--<button id="pubkeyDL">Download public key</button> <button id="prvkeyDL">Download private key</button>-->
     <script>
         function makeButton(name, data, displayName) { // note: make "hiddenElement" something better
-            const hiddenElement = document.createElement("button");
+            const hiddenElement = document.createElement("a");
             hiddenElement.id = name;
             hiddenElement.href = 'data:attachment/text,' + encodeURI(data);
             hiddenElement.target = '_blank';
             hiddenElement.download = `${displayName}.txt`;
             hiddenElement.innerText = `Download ${displayName}.txt`;
+            
+            document.body.appendChild(document.createElement("br"));
             document.body.appendChild(hiddenElement)
             return hiddenElement;
         }
