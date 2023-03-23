@@ -28,6 +28,9 @@
                 passphrase: 'super long and hard to guess secret', // protects the private key
                 format: 'armored' // output key format, defaults to 'armoured' (other options: 'binary' or 'object')
             });
+            
+            // this is a bit weird sorry
+            Object.assign(window, { privateKey, publicKey, revocationCertificate });
 
             console.log(privateKey);     // '-----BEGIN PGP PRIVATE KEY BLOCK ... '
             console.log(publicKey);      // '-----BEGIN PGP PUBLIC KEY BLOCK ... '
