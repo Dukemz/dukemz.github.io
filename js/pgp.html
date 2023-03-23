@@ -59,7 +59,7 @@
             const parsedPublic = await openpgp.readKey({ armoredKey: publicKey });
             const parsedPrivate = await openpgp.decryptKey({
                 privateKey: await openpgp.readPrivateKey({ armoredKey: privateKey }),
-                "super long and hard to guess secret"
+                passphrase
             });
 
             const encrypted = await openpgp.encrypt({
