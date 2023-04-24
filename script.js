@@ -192,10 +192,11 @@ window.splashes = [
     '<a href="https://youtu.be/-O1wszcVF1c">reads the entire tpmc wiki page in vc</a>',
     "Boiled, not fried.",
     "Pots have handles.",
-    "Doesn't have secrets!",
+    "Absolutely NO secrets whatsoever!", // yup. no secrets. i guarantee it
     "whar",
     "🛳🛳🛳",
     "Live Dukemz Reaction:",
+    "Dead Dukemz Reaction:",
     "Compliant with RFC 7168!",
     "Wubba lubba dub dub!",
     "your brain tricks you into thinking",
@@ -265,6 +266,32 @@ window.splashes = [
     "Your door was locked!",
     "Please get in the bag!",
     "Biggity Big egg the egg gets Bigger",
+    "A world of my own mind's creation stands ahead...",
+    "Am I code on a screen?",
+    "It doesn't matter now...",
+    "I wish I could fly...",
+    "It's not time to say goodbye yet.",
+    "Are you still awake?",
+    "A lullaby from an ocean beyond.",
+    "There is a horizon beyond this one, and beyond the next.",
+    "In a world of sound and silence.",
+    "Head in the clouds.",
+    "None of these make any sense.",
+    "50% references, 50% dumb jokes, 100% ducks",
+    "Will you be the 7168 to my 418?",
+    "Disregard any logic or reason you may have.",
+    "Not the original Dukemz!",
+    "ok but what if",
+    "Hello! I'm a helicopter!",
+    "Missile inbound!",
+    "Deploying flares...",
+    "...mist: The glass...",
+    "Mihaly Dumitru Margareta Corneliu Leopold Blanca...",
+    "...Karol Aeon Ignatius Raphael Maria Niketas A. Shilage",
+    "That was so deep I could see a bunch of Adeles rolling in it."
+    "Ducks and geese: nature's amphibious assault aircraft.",
+    "Firing the ducket launcher...",
+    "Crisp white sheets.",
     // ljaldy start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
     "Converting pasta to concrete since 2021!",
@@ -383,7 +410,7 @@ window.splashes = [
     "I'm a spring duckling and I'm having a ball!",
     "Lookie lookie it's a cookie 🍪",
     "I'm ready for a break... <br>Here it is.",
-    "Melee?!", // what
+    // "Melee?!", // what
     "Travelling back in time since 2034!",
     "Freshly-baked biscuits!",
     "Computer will.",
@@ -478,6 +505,7 @@ window.splashes = [
     "These bird puns are getting reduckulous!",
     "gg ngl gtg brb ttyl cya gn"
     // ljaldy end (epic)
+    "This is almost the last splash text.<br>Almost, but not quite.",
 ]
 splashes.push(`There are ${splashes.length + 2} splash texts. Isn't that weird?`);
 splashes.push(`The chance of you seeing this message is 1 in ${splashes.length + 1}.`);
