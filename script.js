@@ -288,7 +288,7 @@ window.splashes = [
     "...mist: The glass...",
     "Mihaly Dumitru Margareta Corneliu Leopold Blanca...",
     "...Karol Aeon Ignatius Raphael Maria Niketas A. Shilage",
-    "That was so deep I could see a bunch of Adeles rolling in it."
+    "That was so deep I could see a bunch of Adeles rolling in it.",
     "Ducks and geese: nature's amphibious assault aircraft.",
     "Firing the ducket launcher...",
     "Crisp white sheets.",
