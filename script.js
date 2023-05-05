@@ -203,7 +203,7 @@ window.splashes = [
     "your brain tricks you into thinking",
     "What made you think this was a good idea?",
     "Are you seeing this?",
-    "Hey Vsauce, Dukemz here."
+    "Hey Vsauce, Dukemz here.",
     "...or is it?",
     "...or am I?",
     "Where are your fingers?",
