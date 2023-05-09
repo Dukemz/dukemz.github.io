@@ -542,7 +542,7 @@ window.splashes = [
     "These bird puns are getting reduckulous!",
     "gg ngl gtg brb ttyl cya gn",
     // ljaldy end (epic)
-    "This is almost the last splash text.<br>Almost, but not quite."
+    "This is almost the last splash text. Almost, but not quite."
 ]
 splashes.push(`There are ${splashes.length + 2} splash texts. Isn't that weird?`);
 splashes.push(`The chance of you seeing this message is 1 in ${splashes.length + 1}.`);
