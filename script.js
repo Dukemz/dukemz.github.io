@@ -329,6 +329,7 @@ window.splashes = [
     "Someone's not in bed.",
     "Don't look for peace, it's been with you all along.",
     "If you look too hard for something, you won't find it.",
+    "You have 10 seconds.<script>setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
     // ljaldy start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
     "Converting pasta to concrete since 2021!",
@@ -458,7 +459,6 @@ window.splashes = [
     "Loading the duck hivemind...",
     "Toppling the economy with seashells+ and biscuits.",
     "Surfing on a purple wave.",
-    "You have 20 seconds.",
     "For more definitions, see Dukemz (disambiguation).",
     "Powered by procrastination!",
     "It says gullible in the URL.",
