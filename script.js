@@ -329,6 +329,11 @@ window.splashes = [
     "Someone's not in bed.",
     "Don't look for peace, it's been with you all along.",
     "If you look too hard for something, you won't find it.",
+    "Don't you have anything better to do?",
+    "In this world, it's dukemz or be dukemz'd.",
+    "Stuck in a cycle, a repeating pattern.",
+    "?ploo",
+    "It certainly rains in this world.",
     "You have 10 seconds.<script>setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
     // ljaldy start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
