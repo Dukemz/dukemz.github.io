@@ -14,7 +14,8 @@
 }
 
 .article-progress-bar {
-    background-color: var(--gd-purple);
+    /* background-color: var(--gd-purple); */
+    background-image: linear-gradient(to right, var(--gd-purple), var(--gd-blue));
     width: 0;
     display: block;
     height: inherit;
