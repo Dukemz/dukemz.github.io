@@ -347,6 +347,9 @@ window.splashes = [
     "Hopefully sticking around for a while.",
     "Too tired to sleep.",
     "break down the gates atop the railway lines",
+    "The world turns its eyes to look at you.",
+    "Operationally amplifying!",
+    "Extraordinary until proven otherwise.",
     "You have 10 seconds.<script>setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
     // ljaldy start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
