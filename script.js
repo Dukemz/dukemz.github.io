@@ -350,7 +350,7 @@ window.splashes = [
     "The world turns its eyes to look at you.",
     "Operationally amplifying!",
     "Extraordinary until proven otherwise.",
-    "You have 10 seconds.<script>setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
+    "You have 10 seconds.<script>window.delaySplash = setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
     // ewoly start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
     "Converting pasta to concrete since 2021!",
@@ -380,7 +380,6 @@ window.splashes = [
     "Num lock on, caps lock off, scroll lock idk.",
     "h",
     "no memes in #general",
-    "wait a minute...<script>setTimeout(() => { alert('You actually waited a minute? I'm impressed') }, 60000)</script>",
     "only one finger and two toes",
     "The bugs are evolving...",
     "Concatenating integers...",
@@ -600,14 +599,15 @@ window.splashes = [
     "Did you know? Iron is the most stable element in existence!",
     "Did you know? Strawberries are not berries, but pumpkins and bananas are!",
     "Did you know? The first use of OMG was in a letter to Winston Churchill!",
-    "Let's play rock, paper, scissors!<script>setTimeout(() => { alert('I chose rock! Who won?') }, 4000)</script>",
-    "Let's play rock, paper, scissors!<script>setTimeout(() => { alert('I chose paper! Who won?') }, 4000)</script>",
-    "Let's play rock, paper, scissors!<script>setTimeout(() => { alert('I chose scissors! Who won?') }, 4000)</script>",
+    "wait a minute...<script>window.delaySplash = setTimeout(() => { alert('You actually waited a minute? I'm impressed') }, 60000)</script>",
+    "Let's play rock, paper, scissors!<script>window.delaySplash = setTimeout(() => { alert('I chose rock! Who won?') }, 4000)</script>",
+    "Let's play rock, paper, scissors!<script>window.delaySplash = setTimeout(() => { alert('I chose paper! Who won?') }, 4000)</script>",
+    "Let's play rock, paper, scissors!<script>window.delaySplash = setTimeout(() => { alert('I chose scissors! Who won?') }, 4000)</script>",
     "I totally hate sarcasm...",
     "Indigo doesn't exist.",
     "Leave out a bowl of cream every night to stay safe frOm_ tH3 H#7|?37} .>,%",
     "DUKEMZ WHERE THE HELL ARE WE?!",
-    "dankemz."
+    "dankemz.",
     "It's ironic that social media makes people antisocial.",
     "Remember to wash your bones! (teeth)",
     "When we meet again... friend.",
@@ -673,6 +673,7 @@ const svgPath = (points, command) => {
 
 const recalcShape = () => {
     // lol sorry for putting this here - duck
+    clearTimeout(window.delaySplash);
     const sploosh = splashes[Math.floor(Math.random()*splashes.length)];
     
     // biscuit to the rescue with jquery (hopefully)
