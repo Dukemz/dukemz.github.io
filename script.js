@@ -115,7 +115,7 @@ window.splashes = [
     "Did you miss me?",
     "YIPEE",
     "Wheatley crab!",
-    "There is no among us joke.",
+    "There is no among us joke.", // oh but there is
     "Don't believe everything on the internet!",
     "25th Greek island!",
     "WALL-E is the best robot.",
@@ -350,8 +350,8 @@ window.splashes = [
     "The world turns its eyes to look at you.",
     "Operationally amplifying!",
     "Extraordinary until proven otherwise.",
-    "You have 10 seconds.<script>setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
-    // ljaldy start
+    "You have 10 seconds.<script>window.delaySplash = setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
+    // ewoly start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
     "Converting pasta to concrete since 2021!",
     "sometimes gaming.",
@@ -369,7 +369,7 @@ window.splashes = [
     "*breathes*",
     "Only 70% banana!",
     "wen the cold doesnt coldulate the ammonia",
-    "Is water wet? Well, here's a better question: is frost frosty?",
+    "Is water wet? Well, here's a better question: is ice icy?",
     "It's delicious. Must be flavour text.",
     "Slang for 'do you kemz?'",
     "Simultaneously too much and not enough time to use.",
@@ -380,7 +380,6 @@ window.splashes = [
     "Num lock on, caps lock off, scroll lock idk.",
     "h",
     "no memes in #general",
-    "wait a minute...",
     "only one finger and two toes",
     "The bugs are evolving...",
     "Concatenating integers...",
@@ -562,7 +561,57 @@ window.splashes = [
     "eggcellent",
     "These bird puns are getting reduckulous!",
     "gg ngl gtg brb ttyl cya gn",
-    // ljaldy end (epic)
+    "G'day mate!", // heyo
+    "Unexpected item in bagging area.", 
+    "Thanks for shopping at DXL's Store.",
+    "You don't know me, I don't know you.<br>And I don't know what I'm doing.",
+    "'This is a ducket.'<br>'dear god'",
+    "Zoom out, and I'll disappear!",
+    "%{(['<>oh gosh</>'])}%",
+    "|these arent brackets|",
+    "beep beep im asleep, i said beep beep im... zzzzz....",
+    "whomst'd've'ly'yaint'ed's'y'nt'ed'ies'ses'ing'able'ric'ive'al'nt'ne'll'al'ify",
+    "Is it pronounced github or jithub?",
+    "There are three types of people, you have been warned.",
+    "hocus pocus, everybody amogus", // i lied
+    "The duck walked up with a glint in his eye.",
+    "Fat-Free!",
+    "~ igloo noises ~",
+    "If you wish to make an apple pie from scratch, <br>you must first invent the universe.",
+    "Chips and fish!",
+    "It's actually 51/101 full.",
+    "No ads!",
+    "The universe is all buckets.",
+    "One of the dukemz of all time!",
+    "Congratulations! You got this splash!",
+    "The good news is that there is no bad news.",
+    "The bad news is that there is no good news.",
+    "def pain():<br>   return 'french bread'",
+    "Remember to save your workings!",
+    "Make a back-up, don't lose all your files!",
+    "Awaiting input...",
+    "I found you.",
+    "Jack and Jill went down the hill. They learnt their lesson.",
+    "Did you know? There are about 73,000 different tree species!",
+    "Did you know? Bread and eggs spoil faster in the fridge!",
+    "Did you know? Chocolate and grapes are toxic to dogs, be careful!",
+    "Did you know? Oranges are an artificial hybrid of a pomelo and a mandarin.",
+    "Did you know? Iron is the most stable element in existence!",
+    "Did you know? Strawberries are not berries, but pumpkins and bananas are!",
+    "Did you know? The first use of OMG was in a letter to Winston Churchill!",
+    "wait a minute...<script>window.delaySplash = setTimeout(() => { alert('You actually waited a minute? I'm impressed') }, 60000)</script>",
+    "Let's play rock, paper, scissors!<script>window.delaySplash = setTimeout(() => { alert('I chose rock! Who won?') }, 4000)</script>",
+    "Let's play rock, paper, scissors!<script>window.delaySplash = setTimeout(() => { alert('I chose paper! Who won?') }, 4000)</script>",
+    "Let's play rock, paper, scissors!<script>window.delaySplash = setTimeout(() => { alert('I chose scissors! Who won?') }, 4000)</script>",
+    "I totally hate sarcasm...",
+    "Indigo doesn't exist.",
+    "Leave out a bowl of cream every night to stay safe frOm_ tH3 H#7|?37} .>,%",
+    "DUKEMZ WHERE THE HELL ARE WE?!",
+    "dankemz.",
+    "It's ironic that social media makes people antisocial.",
+    "Remember to wash your bones! (teeth)",
+    "When we meet again... friend.",
+    // ewoly end (epic)
     "This is almost the last splash text. Almost, but not quite."
 ]
 splashes.push(`There are ${splashes.length + 2} splash texts. Isn't that weird?`);
@@ -624,6 +673,7 @@ const svgPath = (points, command) => {
 
 const recalcShape = () => {
     // lol sorry for putting this here - duck
+    clearTimeout(window.delaySplash);
     const sploosh = splashes[Math.floor(Math.random()*splashes.length)];
     
     // biscuit to the rescue with jquery (hopefully)
