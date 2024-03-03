@@ -350,6 +350,9 @@ window.splashes = [
     "The world turns its eyes to look at you.",
     "Operationally amplifying!",
     "Extraordinary until proven otherwise.",
+    "🎩 HI IM THE NOT EVIL TWIN", // tophat
+    "Who the hell is Steve Jobs?",
+    "the birds are coming",
     "You have 10 seconds.<script>window.delaySplash = setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
     // ewoly start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
