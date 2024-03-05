@@ -353,6 +353,12 @@ window.splashes = [
     "🎩 HI IM THE NOT EVIL TWIN", // tophat
     "Who the hell is Steve Jobs?",
     "the birds are coming",
+    "The universe is, and we are.",
+    "The quiet shade, across old bark",
+    "In the ancient glade, it's always dark",
+    "We do not have much connection, you and I.",
+    "I hope you won't mind if I think of you as a friend.",
+    "This song is new to me, but I am honoured to be a part of it.",
     "You have 10 seconds.<script>window.delaySplash = setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
     // ewoly start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
