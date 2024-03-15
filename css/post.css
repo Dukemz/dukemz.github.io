@@ -142,7 +142,7 @@ p {
 }
 
 .container.text-container, .container.header-text-container {
-    width: 310px;
+    width: 90%;
 }
 
 .container.image-container {
