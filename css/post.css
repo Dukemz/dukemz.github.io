@@ -142,7 +142,7 @@ p {
 }
 
 .container.text-container, .container.header-text-container {
-    width: 90%;
+    width: 310px;
 }
 
 .container.image-container {
@@ -178,7 +178,7 @@ p {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .container.text-container, .container.header-text-container {
-        width: 680px;
+        width: 90%;
     }
 
     .container.image-container {
