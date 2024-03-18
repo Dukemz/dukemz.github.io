@@ -754,3 +754,5 @@ const recalcShape = () => {
 }
 
 $(window).resize(_.debounce(recalcShape, 200));
+
+console.log("hi lol\nthere's no secrets here either, sorry");
