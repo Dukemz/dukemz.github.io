@@ -720,16 +720,18 @@ const recalcShape = () => {
     // lol sorry for putting this here - duck
     clearTimeout(window.delaySplash);
     const sploosh = splashes[Math.floor(Math.random()*splashes.length)];
-    window.splashReloadCount += 1;
-    if(window.splashReloadCount < 5 && ($("#randomSplash").length)) {
-        $("#randomSplash").html("april fools lol");
-    }
     
     // biscuit to the rescue with jquery (hopefully)
     if ($("#randomSplash").length) $("#randomSplash").html(sploosh);
     //let splText = document.getElementById("randomSplash")?.innerHTML;
     //console.log(splText)
     //if(splText !== undefined) splText = sploosh;
+
+    // april fools
+    window.splashReloadCount += 1;
+    if(window.splashReloadCount < 5 && ($("#randomSplash").length)) {
+        $("#randomSplash").html("april fools lol");
+    }
     
     $(".shape-thing").empty();
     let points = [[0, 0]];
