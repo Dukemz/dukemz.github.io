@@ -660,6 +660,7 @@ window.splashes = [
 ]
 splashes.push(`There are ${splashes.length + 2} splash texts. Isn't that weird?`);
 splashes.push(`The chance of you seeing this message is 1 in ${splashes.length + 1}.`);
+window.splashReloadCount = 0;
 // in the future - put date specific splashes here
 
 // everything below here is tb's stuff
@@ -719,6 +720,10 @@ const recalcShape = () => {
     // lol sorry for putting this here - duck
     clearTimeout(window.delaySplash);
     const sploosh = splashes[Math.floor(Math.random()*splashes.length)];
+    window.splashReloadCount += 1;
+    if(window.splashReloadCount < 5 && ($("#randomSplash").length)) {
+        $("#randomSplash").html("april fools lol");
+    }
     
     // biscuit to the rescue with jquery (hopefully)
     if ($("#randomSplash").length) $("#randomSplash").html(sploosh);
