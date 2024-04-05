@@ -728,10 +728,11 @@ const recalcShape = () => {
     //if(splText !== undefined) splText = sploosh;
 
     // april fools
+    /*
     window.splashReloadCount += 1;
     if(window.splashReloadCount < 5 && ($("#randomSplash").length)) {
         $("#randomSplash").html("april fools lol");
-    }
+    }*/
     
     $(".shape-thing").empty();
     let points = [[0, 0]];
