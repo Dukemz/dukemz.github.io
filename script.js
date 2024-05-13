@@ -394,6 +394,11 @@ window.splashes = [
     "Tungsten, Hydrogen and Astatine: the elements of surprise",
     "Connection terminated.",
     "Busy photosynthesising!",
+    "From the river to the sea!",
+    "FREE PALESTINE!",
+    "You are loved, remember that.",
+    "Kindness is a choice you can make every day.",
+    "Laugh off a downer, lighten up a frowner,<br>smile for the good, share if you could.",
     "You have 10 seconds.<script>window.delaySplash = setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
     // ewoly start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
