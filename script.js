@@ -408,11 +408,14 @@ window.splashes = [
     "Bringing you useless information since forever!",
     "Walking on blue skies, looking for something I lost.",
     "the voices",
-    "If you stare at this for long enough, absolutely nothing happens!<script>window.delaySplash = setTimeout(() => { alert('Okay, I lied.') }, 10000)</script>",
-    "You have 10 seconds.<script>window.delaySplash = setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
-    "<span onclick="alert('HOW DARE YOU')">don't you dare click me...</span>",
     "Because I have nothing better to do with my life.",
     "Read <a href='https://archiveofourown.org/works/50444191?view_full_work=true'>Torches and Shadows!</a>",
+    "What is love?",
+    "What's the difference between a bus and a coach?",
+    "boingus",
+    "If you stare at this for long enough, absolutely nothing happens!<script>window.delaySplash = setTimeout(() => { alert('Okay, I lied.') }, 20000)</script>",
+    "You have 10 seconds.<script>window.delaySplash = setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
+    "<span onclick='alert('HOW DARE YOU')'>don't you dare click me...</span>",
     
     // ewoly start
     "On a scale of 1 to 10, what's your favourite colour of the alphabet?",
