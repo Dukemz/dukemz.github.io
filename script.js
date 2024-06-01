@@ -417,6 +417,13 @@ window.splashes = [
     "This moment is yours and yours alone.",
     "I'm tired. Are you tired too?",
     "Speaking in a voice of silence.",
+    "What is happiness?",
+    "happiness is... sosig",
+    "books to the tune",
+    "shfukad",
+    "have 2 save muns for colleg...",
+    "cool leg",
+    "yoinky sploinky".
     "If you stare at this for long enough, absolutely nothing happens!<script>window.delaySplash = setTimeout(() => { alert('Okay, I lied.') }, 20000)</script>",
     "You have 10 seconds.<script>window.delaySplash = setTimeout(() => { alert('BOO! Did I scare you?') }, 10000)</script>",
     "<span onclick='alert('HOW DARE YOU')'>don't you dare click me...</span>",
