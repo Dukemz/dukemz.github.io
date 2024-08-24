@@ -444,7 +444,7 @@ window.splashes = [
     "The three states of matter: true, false, and null",
     "undefined",
     "defined",
-    "What's the lava version of wet?"
+    "What's the lava version of wet?",
     "If ice is rock then water is lava.",
     "Did you know? Because I didn't.",
     "Did you know? 113% of statistics are made up.",
