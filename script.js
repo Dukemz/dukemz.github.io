@@ -852,7 +852,7 @@ window.splashes = [
     "This is a splash. Or is it?", // vsauce music
     "Out now.",
     "You found me!",
-    "And finally, in finalty...",
+    "And finally, in finality...",
     // ewoly end (epic)
     "This is almost the last splash text. Almost, but not quite."
 ]
