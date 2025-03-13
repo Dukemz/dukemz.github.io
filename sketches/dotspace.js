@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  background(22, 0, 22, 128); // semi-transparent background
+  background(10, 0, 22, 128); // semi-transparent background
   
   // draw dots layer by layer
   for (let layer = 0; layer < 3; layer++) {
