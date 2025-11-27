@@ -940,9 +940,8 @@ const datesplashes = [
     ["It's Chewsday, innit", null, null, null, null, null, null, 1, 1],
     ["Happy Twixmas!", 11, 11, 26, 31, null, null, null, 10],
     ["Error 404: Date Not Found", 3, 3, 3, 3, null, null, null, 100],
-    [`Day One: Survive ${monthname}`, null, null, 1, 1, null, null, null, 10],
     ["Oh hey look it's Friday the Thirteenth", null, null, 12, 12, null, null, 4, 10],
-    [`Day One: Survive ${monthname}`, null, null, 1, 1, null, null, null, 10]
+    [`Day One: Survive ${monthname}`, null, null, 0, 0, null, null, null, 10]
     [`Day ${day+1} of ${monthname}? What's next, ${day+2}?`, null, null, 0, 27, null, null, null, 1],
 
     [`It's already ${monthname}?`, null, null, null, null, null, null, null, 1],
@@ -956,7 +955,7 @@ for (let splooshid = 0; splooshid < datesplashes.length; splooshid++) {
     if ((month >= sploosh[1] && month <= sploosh[2]) != sploosh[1] > sploosh[2] || sploosh[1] == null) {
         if ((day >= sploosh[3] && day <= sploosh[4]) != sploosh[3] > sploosh[4] || sploosh[3] == null) {
             if ((hour >= sploosh[5] && hour <= sploosh[6]) != sploosh[5] > sploosh[6] || sploosh[5] == null) {
-                if (dayofweek == sploosh[7] || sploosh[7] == null {
+                if (dayofweek == sploosh[7] || sploosh[7] == null) {
                     for (let i = 0; i < sploosh[8]; i++) {
                         splashes.push(sploosh[0])
                     }
