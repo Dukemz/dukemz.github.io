@@ -897,13 +897,78 @@ window.splashes = [
     "Out now.",
     "You found me!",
     "And finally, in finality...",
+    "Why are you here?",
+    "The four data types lived in harmony: bool, float, int, and string<br>But everything changed when the floats attacked - nothing was whole again",
+    "You can't tell a joke to an egg. They'll crack.",
+    "Why is a spoon the perfect shape to hold an egg?",
+    "It's called a fork because it has four prongs.<br>If there were three, then it would be a freek of nature.",
+    "[Someone kept closing square brackets. [I've had to open more to counteract.",
+    "An unforgetable luncheon!",
+    "The Neighbour is always horsing around...",
+    "The more of these I add, the less chance they are seen.",
+    "It says gullible in the console.",
     // ewoly end (epic)
     "This is almost the last splash text. Almost, but not quite."
 ]
-splashes.push(`There are ${splashes.length + 2} splash texts. Isn't that weird?`);
+// in the future - put date specific splashes here
+// i mean, sure ok i can -ewoly
+const today = new Date();
+const month = today.getMonth();
+const day = today.getDate();
+const hour = today.getHours();
+const dayofweek = today.getDay();
+const monthname = ["January","February","March","April","May","June","July","August","September","October","November","December"][month];
+const datesplashes = [ 
+    // [splash, start month, endmonth, startday, endday, starthour, endhour, day, special]
+    // (set as null to ignore; start and end are inclusive unless they cycle so end is exclusive; index start at 0; special means high chance to occur for things like events)
+    ["What are you doing for the new year?", 0, 0, 0, 15, null, null, null, 1],
+    ["Go to sleep", null, null, null, null, 23, 4, null, 1],
+    ["Why are you awake at this time?", null, null, null, null, 23, 5, null, 1],
+    ["Good morning!", null, null, null, null, 5, 11, null, 1],
+    ["Good afternoon!", null, null, null, null, 12, 16, null, 1],
+    ["Good evening!", null, null, null, null, 17, 20, null, 1],
+    ["Good night!", null, null, null, null, 21, 24, null, 1],
+    ["Technically, this month is least likely to occur", 1, 1, null, null, null, null, null, 1],
+    ["April Showers!", 3, 3, null, null, null, null, null, 10],
+    ["Maybe it's May", 4, 4, null, null, null, null, null, 10],
+    ["May the Fourth be with you", 4, 4, 3, 3, null, null, null, 1000],
+    ["Remember Remember, The Fifth Of November", 10, 10, 4, 4, null, null, null, 1000],
+    ["<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Hmm what day is it?</a>", 3, 3, 1, 1, null, null, null, 1000], // april fools day
+    ["It is Wednesday my dudes", null, null, null, null, null, null, 2, 1],
+    ["Thank Goodness It's Friday", null, null, null, null, null, null, 4, 1],
+    ["'I hate Mondays' - Garfield", null, null, null, null, null, null, 0, 1],
+    ["It's Chewsday, innit", null, null, null, null, null, null, 1, 1],
+    ["Happy Twixmas!", 11, 11, 26, 31, null, null, null, 10],
+    ["Error 404: Date Not Found", 3, 3, 3, 3, null, null, null, 100],
+    [`Day One: Survive ${monthname}`, null, null, 1, 1, null, null, null, 10],
+    ["Oh hey look it's Friday the Thirteenth", null, null, 12, 12, null, null, 4, 10],
+    [`Day One: Survive ${monthname}`, null, null, 1, 1, null, null, null, 10]
+    [`Day ${day+1} of ${monthname}? What's next, ${day+2}?`, null, null, 0, 27, null, null, null, 1],
+
+    [`It's already ${monthname}?`, null, null, null, null, null, null, null, 1],
+    [`Embracing today since ${day+1}/${month+1}/${today.getYear()}!`, null, null, null, null, null, null, null, 1],
+]
+// add more splashes pls -ewoly
+const numofsplashes = splashes.length + datesplashes.length + 2
+
+for (let splooshid = 0; splooshid < datesplashes.length; splooshid++) {
+    let sploosh = datesplashes[splooshid]
+    if ((month >= sploosh[1] && month <= sploosh[2]) != sploosh[1] > sploosh[2] || sploosh[1] == null) {
+        if ((day >= sploosh[3] && day <= sploosh[4]) != sploosh[3] > sploosh[4] || sploosh[3] == null) {
+            if ((hour >= sploosh[5] && hour <= sploosh[6]) != sploosh[5] > sploosh[6] || sploosh[5] == null) {
+                if (dayofweek == sploosh[7] || sploosh[7] == null {
+                    for (let i = 0; i < sploosh[8]; i++) {
+                        splashes.push(sploosh[0])
+                    }
+                }
+            }
+        }
+    }
+}
+
+splashes.push(`There are ${numofsplashes} splash texts. Isn't that weird?`);
 splashes.push(`The chance of you seeing this message is 1 in ${splashes.length + 1}.`);
 window.splashReloadCount = 0;
-// in the future - put date specific splashes here
 
 // everything below here is tb's stuff
 
