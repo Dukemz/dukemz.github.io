@@ -1,113 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>pgp</title>
+    <title>PGP Keygen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="openpgp.min.js"></script>
 </head>
 <body>
-    <p>generate a key</p>
-    <!--<button id="pubkeyDL">Download public key</button> <button id="prvkeyDL">Download private key</button>-->
+    <h1>PGP Keygen</h1>
+    <p>Generate a key set using the following parameters:</p>
+    <label for="usernameinp">Username:</label>
+    <input type="text" id="usernameinp"><br>
+    <label for="emailinp">Email (optional):</label>
+    <input type="email" id="emailinp"><br>
+    <label for="passphraseinp">Password:</label>
+    <input type="password" id="passphraseinp"><br><br>
+
+    <button id="generate" onclick="generateKeys()">Generate keys</button><br>
+
     <script>
-        function makeButton(name, data, displayName) { // note: make "hiddenElement" something better
-            const hiddenElement = document.createElement("a");
-            hiddenElement.id = name;
-            hiddenElement.href = 'data:attachment/text,' + encodeURI(data);
-            hiddenElement.target = '_blank';
-            hiddenElement.download = `${displayName}.txt`;
-            hiddenElement.innerText = `Download ${displayName}.txt`;
-            
-            document.body.appendChild(document.createElement("br"));
-            document.body.appendChild(hiddenElement)
-            return hiddenElement;
-        }
         async function generateKeys() {
-            if(window.publicKey) return null;
+            if(window.publicKey) return null; // only generate one key set per session
+
+            const username = document.getElementById("usernameinp").value.trim();
+            const email = document.getElementById("emailinp").value.trim();
+            const passphrase = document.getElementById("passphraseinp").value.trim();
+
+            const userIDs = [{ name: username || undefined, email: email || undefined }];
+
             const { privateKey, publicKey, revocationCertificate } = await openpgp.generateKey({
-                type: 'ecc', // Type of the key, defaults to ECC
-                curve: 'curve25519', // ECC curve name, defaults to curve25519
-                userIDs: [{ name: 'Jon Smith', email: 'jon@example.com' }], // you can pass multiple user IDs
-                passphrase: 'super long and hard to guess secret', // protects the private key
-                format: 'armored' // output key format, defaults to 'armoured' (other options: 'binary' or 'object')
+                type: 'ecc',
+                curve: 'curve25519',
+                userIDs, // Only included if username or email exists
+                passphrase: passphrase || undefined, // Only included if passphrase is not empty
+                format: 'armored'
             });
-            
+
+
             // this is a bit weird sorry
             Object.assign(window, { privateKey, publicKey, revocationCertificate });
 
             console.log(privateKey);     // '-----BEGIN PGP PRIVATE KEY BLOCK ... '
             console.log(publicKey);      // '-----BEGIN PGP PUBLIC KEY BLOCK ... '
             console.log(revocationCertificate); // '-----BEGIN PGP PUBLIC KEY BLOCK ... '
-            // i'm aware this is the most awful way to code this but whatever
-            const prvKeyElement = makeButton('prvKeyElement', privateKey, "privateKey");
-            const pubKeyElement = makeButton('pubKeyElement', publicKey, "publicKey");
-            const revocElement = makeButton('revocElement', revocationCertificate, "revocationCertificate");
+            
+            // i'm aware this is far from the best way to code this but whatever
+            const prvKeyElement = createDownloadableFile('prvKeyElement', privateKey, "privateKey");
+            const pubKeyElement = createDownloadableFile('pubKeyElement', publicKey, "publicKey");
+            const revocElement = createDownloadableFile('revocElement', revocationCertificate, "revocationCertificate");
         }
-    
-        async function encryptTest() {
-            /*
-            // put keys in backtick (``) to avoid errors caused by spaces or tabs
-            const publicKeyArmored = ``;
-            const privateKeyArmored = ``; // encrypted private key
-            const passphrase = `yourPassphrase`; // what the private key is encrypted with
 
-            const publicKey = await openpgp.readKey({ armoredKey: publicKeyArmored });
+        function createDownloadableFile(name, data, displayName) {
+            const dlElement = document.createElement("a");
+            dlElement.id = name;
+            dlElement.href = 'data:attachment/text,' + encodeURI(data);
+            dlElement.target = '_blank';
+            dlElement.download = `${displayName}.asc`;
+            dlElement.innerText = `Download ${displayName}.asc`;
 
-            const privateKey = await openpgp.decryptKey({
-                privateKey: await openpgp.readPrivateKey({ armoredKey: privateKeyArmored }),
-                passphrase
-            });
-            */
-            
-            const parsedPublic = await openpgp.readKey({ armoredKey: publicKey });
-            const parsedPrivate = await openpgp.decryptKey({
-                privateKey: await openpgp.readPrivateKey({ armoredKey: privateKey }),
-                passphrase
-            });
-
-            const encrypted = await openpgp.encrypt({
-                message: await openpgp.createMessage({ text: 'Hello, World!' }), // input as Message object
-                encryptionKeys: parsedPublic,
-                signingKeys: parsedPrivate // optional
-            });
-            console.log(encrypted); // '-----BEGIN PGP MESSAGE ... END PGP MESSAGE-----'
-            
-            // DECRYPT
-            
-            const message = await openpgp.readMessage({
-                armoredMessage: encrypted // parse armoured message
-            });
-            const { data: decrypted, signatures } = await openpgp.decrypt({
-                message,
-                verificationKeys: parsedPublic, // optional
-                decryptionKeys: parsedPrivate
-            });
-            console.log(decrypted); // 'Hello, World!'
-            // check signature validity (signed messages only)
-            try {
-                await signatures[0].verified; // throws on invalid signature
-                console.log('Signature is valid');
-            } catch (e) {
-                throw new Error('Signature could not be verified: ' + e.message);
-            }
+            document.body.appendChild(document.createElement("br"));
+            document.body.appendChild(dlElement);
+            return dlElement;
         }
-        /*
-        document.getElementById('pubkeyDL').addEventListener('click', () => {
-            const hiddenElement = document.createElement('a');
-            hiddenElement.href = 'data:attachment/text,' + encodeURI(publicKey);
-            hiddenElement.target = '_blank';
-            hiddenElement.download = 'publickey.txt';
-            hiddenElement.click();
-            hiddenElement.remove();
-        });
-        document.getElementById('prvkeyDL').addEventListener('click', () => {
-            const hiddenElement = document.createElement('a');
-            hiddenElement.href = 'data:attachment/text,' + encodeURI(privateKey);
-            hiddenElement.target = '_blank';
-            hiddenElement.download = 'privateKey.txt';
-            hiddenElement.click();
-            hiddenElement.remove();
-        });
-        */
     </script>
-    <button id="generate" onclick="generateKeys()">Generate keys</button>
 </body>
 </html>
