@@ -508,7 +508,8 @@ window.splashes = [
     "I'm the bold action maaaaaan",
     "Error: 404 page not found",
     "Punctuation saves lives!",
-    "washing machine gun",
+    "New kitchen gun!",
+    "Sparkles like new!",
     "maybe.",
     "Giving helpful advice since some point in the past!",
     "New leader of the Crystal Clods!",
@@ -519,8 +520,8 @@ window.splashes = [
     "Based in cringe!",
     "<a href='https://dukemz.github.io/deltaLerp/index_q5.html'>Check out my game thing!</a>",
     "Have you ever?",
-    "Don't look at my search history!",
-    "Clicking this text does nothing!",
+    "Don't look at my search history!", // its delety sory
+    "Clicking this text doesn't something!",
     "I should probably do revision instead of writing these.",
     "Me? A medal for procrastination? I'll get it later.",
     "This version of the editor doesn't support any editing functionality.",
@@ -574,6 +575,12 @@ window.splashes = [
     "Coagulate... then melt away.",
     "I have no reason, I simply be.",
     "toothpaste boy",
+    "RECONSTRUCT WHAT!?",
+    "stairs",
+    "waxed lightly weathered cut copper stairs",
+    "ayo the pizza here",
+    "WJAPFJGFTCAAFOF",
+    
     
     
     
@@ -612,6 +619,7 @@ window.splashes = [
     "This website was brought to you by...",
     "Num lock on, caps lock off, scroll lock idk.",
     "h",
+    "E",
     "no memes in #general",
     "no general in #memes",
     "only one finger and two toes",
@@ -888,8 +896,9 @@ window.splashes = [
     "01100010 01101111 01101111 01101100", // work it out without translation
     "Octopi have an amazing byte",
     "Please do not the cat",
-    "Use Firefox!",
-    "Uninstall McAfee... please...",
+    "Use Firefox!", // detect browser
+    "Use DuckDuckGo!",
+    "Uninstall McAfee... please", // uninstall twice
     "Living in the present since today!",
     "The default object is sightly, smelly, tasty, noisy, and touchy.",
     "#524742 is the RGB of RGB",
@@ -900,13 +909,19 @@ window.splashes = [
     "Why are you here?",
     "The four data types lived in harmony: bool, float, int, and string<br>But everything changed when the floats attacked - nothing was whole again",
     "You can't tell a joke to an egg. They'll crack.",
-    "Why is a spoon the perfect shape to hold an egg?",
-    "It's called a fork because it has four prongs.<br>If there were three, then it would be a freek of nature.",
+    "Why is a spoon the perfect shape to hold an egg?", //zerok
+    "It's called a fork because it has four prongs.<br>If there were three, then it would be a threek of nature.",
     "[Someone kept closing square brackets. [I've had to open more to counteract.",
-    "An unforgetable luncheon!",
+    "An unforgettable luncheon!",
     "The Neighbour is always horsing around...",
     "The more of these I add, the less chance they are seen.",
     "It says gullible in the console.",
+    "Why is it called a splash, it sounds nothing like a splash.",
+    "router (epic)",
+    "VOID",
+    "Why are they called 'dles' when they are anything but",
+    "Permaspike remains unchanged",
+    
     // ewoly end (epic)
     "This is almost the last splash text. Almost, but not quite."
 ]
@@ -922,8 +937,8 @@ const datesplashes = [
     // [splash, start month, endmonth, startday, endday, starthour, endhour, day, special]
     // (set as null to ignore; start and end are inclusive unless they cycle so end is exclusive; index start at 0; special means high chance to occur for things like events)
     ["What are you doing for the new year?", 0, 0, 0, 15, null, null, null, 1],
-    ["Go to sleep", null, null, null, null, 23, 4, null, 1],
-    ["Why are you awake at this time?", null, null, null, null, 23, 5, null, 1],
+    ["Go to sleep", null, null, null, null, 23, 4, null, 10],
+    ["Why are you awake at this time?", null, null, null, null, 23, 5, null, 10],
     ["Good morning!", null, null, null, null, 5, 11, null, 1],
     ["Good afternoon!", null, null, null, null, 12, 16, null, 1],
     ["Good evening!", null, null, null, null, 17, 20, null, 1],
@@ -933,7 +948,9 @@ const datesplashes = [
     ["Maybe it's May", 4, 4, null, null, null, null, null, 10],
     ["May the Fourth be with you", 4, 4, 3, 3, null, null, null, 1000],
     ["Remember Remember, The Fifth Of November", 10, 10, 4, 4, null, null, null, 1000],
-    ["<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Hmm what day is it?</a>", 3, 3, 1, 1, null, null, null, 1000], // april fools day
+    ["Do you remember?", 8, 8, 20, 20, null, null, null, 100],
+    ["Don't forget to jump today!", 1, 1, 28, 28, null, null, null, 1000],
+    ["<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Hmm what day is it?</a>", 3, 3, 0, 0, null, null, null, 10000], // april fools day
     ["It is Wednesday my dudes", null, null, null, null, null, null, 2, 1],
     ["Thank Goodness It's Friday", null, null, null, null, null, null, 4, 1],
     ["'I hate Mondays' - Garfield", null, null, null, null, null, null, 0, 1],
