@@ -934,9 +934,9 @@ const hour = today.getHours();
 const dayofweek = today.getDay();
 const monthname = ["January","February","March","April","May","June","July","August","September","October","November","December"][month];
 const datesplashes = [ 
-    // [splash, start month, endmonth, startday, endday, starthour, endhour, day, special]
-    // (set as null to ignore; start and end are inclusive unless they cycle so end is exclusive; index start at 0; special means priority)
-    ["What are you doing for the new year?", 0, 0, 0, 15, null, null, null, 10],
+    // [splash, start month, endmonth, startday, endday, starthour, endhour, day, priority]
+    // (set as null to ignore; start and end are inclusive; index start at 0; priority of 1 means not forced)
+    ["What are you doing for the new year?", 0, 0, 0, 4, null, null, null, 10],
     ["Go to sleep", null, null, null, null, 23, 4, null, 10],
     ["Why are you awake at this time?", null, null, null, null, 23, 5, null, 10000],
     ["Good morning!", null, null, null, null, 5, 11, null, 1],
@@ -967,12 +967,13 @@ const datesplashes = [
 // add more splashes pls -ewoly
 const numofsplashes = splashes.length + datesplashes.length + 2
 datesplashes.sort((a, b) => a[8] - b[8])
+datesplashes.reverse()
 window.forcedsplashes = []
 for (let splooshid = 0; splooshid < datesplashes.length; splooshid++) {
     let sploosh = datesplashes[splooshid]
-    if ((month >= sploosh[1] && month <= sploosh[2]) != sploosh[1] > sploosh[2] || sploosh[1] == null) {
-        if ((day >= sploosh[3] && day <= sploosh[4]) != sploosh[3] > sploosh[4] || sploosh[3] == null) {
-            if ((hour >= sploosh[5] && hour <= sploosh[6]) != sploosh[5] > sploosh[6] || sploosh[5] == null) {
+    if ((month >= sploosh[1] && month <= sploosh[2] && sploosh[1] <= sploosh[2]) || ((month >= sploosh[1] || month <= sploosh[2]) && sploosh[1] > sploosh[2]) || sploosh[1] == null) {
+        if ((day >= sploosh[3] && day <= sploosh[4] && sploosh[3] <= sploosh[4]) || ((day >= sploosh[3] || day <= sploosh[4]) && sploosh[3] > sploosh[4]) || sploosh[3] == null) {
+            if ((hour >= sploosh[5] && hour <= sploosh[6] && sploosh[5] <= sploosh[6]) || ((hour >= sploosh[5] || hour <= sploosh[6]) && sploosh[5] > sploosh[6]) || sploosh[5] == null) {
                 if (dayofweek == sploosh[7] || sploosh[7] == null) {
                     if (sploosh[8] > 1) {
                         forcedsplashes.push(sploosh[0])
