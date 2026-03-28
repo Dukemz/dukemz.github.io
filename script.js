@@ -1048,7 +1048,7 @@ const recalcShape = () => {
     let sploosh
     if (forcedsplashes.length > 0) {
         sploosh = forcedsplashes[0]
-        forcedsplashs.shift()
+        forcedsplashes.shift()
     } else {
         sploosh = splashes[Math.floor(Math.random()*splashes.length)];
     }
