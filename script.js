@@ -603,13 +603,10 @@ window.splashes = [
     "Rerouting engine power for biscuit production...",
     "= )",
     "OUR NEW [[soon to be old]] [upgraded!] WEBSITE!!",
-    "Mail mail you mail mail and mail mail you mail mail and",
     "Was that the duck of 87?!",
     "A worthy excuse of procrastination.",
-    "*breathes*",
     "Only 70% banana!",
     "wen the cold doesnt coldulate the ammonia",
-    "Is water wet? Well, here's a better question: is ice icy?",
     "It's delicious. Must be flavour text.",
     "Slang for 'do you kemz?'",
     "Simultaneously too much and not enough time to use.",
@@ -627,7 +624,7 @@ window.splashes = [
     "Concatenating integers...",
     "A+ for effort.",
     "ENABLE THE BAGEL",
-    "Do not feed the pigeons.",
+    //"Do not feed the pigeons.",
     "Formerly known as dukemz.",
     "v2",
     "For the fans that spin really fast.",
@@ -636,13 +633,11 @@ window.splashes = [
     "On of th lttrs on my kyboard is brokn, snd hlp.",
     //"dstgdpm10h", duplicate
     "Greetings and salutations!",
-    "12 13 21 22 23 24 32 34 41 42 44", // grid
     "How many holes in a polo?",
     "Generating content... This may take a while.",
     "Nothing does not rhyme with orange.",
     "Dihydrogen monoxide is not dangerous.",
     "Hello there.", // back again
-    "Each Peach Pear Plum",
     "uz.demk",
     "<a href='https://www.youtube.com/watch?v=-1oRezdQEzM'>]]]</a>",
     "Me has ungood inglish.",
@@ -659,35 +654,29 @@ window.splashes = [
     "Eat your veggies!",
     "A duck walked up to the lemonade stand...",
     "<a href='https://dukemz.github.io/'>Click here for another splash!</a>",
-    "Welcome to Dukemz's Pizza Emporium, how may we help you?",
     "Knock knock.",
     "Why did the duck cross the road????",
     "<a href='https://bit.ly/3EjjNW8'>CLICK HERE!!!</a>",
     "Did you know? There is only one splash with the word 'deposit' in it.",
     "xnopyt",
     "camelCaseIsUsefulForSeparatingWordsInCode",
-    "Take your age. Add 2. Subtract 2. That's your age.",
-    "This splash has only 41 characters in it.",
     "Do I smell burning chicken?",
     //"19th of August 2024 17:32:47:1026", // what // yeah what is this
     "Don't forget.",
     "#stopusinghashtags",
     "smh forgot to capitalise dukemz.",
-    "ping-pong = png(i-o)",
     "colourize",
     "colorise", // american spelling
     "dUkEmZ.",
     "return null;",
     "<a href='https://dukemz.github.io/whyareyoulookinghere'>[Hyperlink Blocked]</a>",
     "Greetings traveller, rest here for a while.",
-    "3... 2... 1...",
     // "owo", // no.
     "Minced garlic!",
     "Are you ready kids?",
     "Heyo!",
     //"What... cactus..?",
     "{groovy brackets}",
-    "sdrawkcab",
     "For more Dukemz content!",
     //"Duck? *bonk*",
     "Welcome to the Internet.",
@@ -712,13 +701,10 @@ window.splashes = [
     // "Melee?!", // what
     "Travelling back in time since 2034!", // eventually will be false
     "Freshly-baked biscuits!",
-    "Computer will.",
-    "Computer knows.",
     "You've been put on hold, someone will see you shortly.",
     "Hello to see you now, goodbye to see you later.",
     //"How many holes in a polo?", duplicate
     "Loading the duck hivemind...", // back again again
-    "Toppling the economy with seashells+ and biscuits.",
     "Surfing on a purple wave.",
     "For more definitions, see Dukemz (disambiguation).",
     "Powered by procrastination!",
@@ -728,11 +714,9 @@ window.splashes = [
     "The fifth element: inspect element",
     "But is it really dukemz?",
     "Definitely dukemz.",
-    "Photosensitive Scissor Warning",
     "What a pretty website! I sure hope no-one breaks it...",
     "Hexagons are the Bestagons.",
     "Three is a prime example of a number.",
-    "Around the world...",
     "🐟",
     "aibohphobia: fear of palindromes",
     "hippopotomonstrosesquippedaliophobia: fear of long words",
@@ -742,14 +726,13 @@ window.splashes = [
     "console.log('splash text')",
     "Spudow!",
     "Purble",
-    "Have you ever seen Dukemz and Lord Duck in the same room?",
+    //"Have you ever seen Dukemz and Lord Duck in the same room?",
     "The daily essentials: bread, milk, bug repellent.",
     //"You can have money or duck.<br>'Duck?' Duck it is then.",
     "The Second Dukemz.",
     "yo",
     "Welcome, welcome. Welcome? Welcome!",
     "And I'll dukemz again...",
-    "+++ = 6<br>--+ = 5<br>++- = ?",
     "Don't turn me into a palindrome!emordnilap a otni em nrut t'noD",
     "e  g  g",
     "What came first: the duck or the egg?",
@@ -769,8 +752,6 @@ window.splashes = [
     "Fish Gaming Wednesday",
     "12345 is a passCODE!",
     ":O",
-    "A wild viewer has been spotted!",
-    "Duck in the mud!",
     "Straighten your back, shrimp!",
     "Have a nice day!",
     "Everyone asks when update but not how update.<br>Especially since I don't know how.",
@@ -782,7 +763,7 @@ window.splashes = [
     "Reminder to drink water.",
     "Hold on, just got to read an entire wiki article...",
     "dukemzn't.",
-    "I only just realised one splash appears twice on the list.",
+    "I've only just realised one splash appears twice on the list.",
     "I live in Spain but without the s or i. 🍳",
     "0.1134",
     "Building a computer from just NAND gates.",
@@ -801,7 +782,6 @@ window.splashes = [
     "Can you quack the code?",
     "eggcellent",
     "These bird puns are getting reduckulous!",
-    "idk tbh gg ngl gtg brb ttyl cya gn",
     "G'day mate!", // heyo
     "Unexpected item in bagging area.", 
     "Thanks for shopping at DXL's Store.",
@@ -811,15 +791,10 @@ window.splashes = [
     "%{(['<>oh gosh</>'])}%",
     "|these arent brackets|",
     //"beep beep im asleep, i said beep beep im... zzzzz....",
-    "whomst'd've'ly'yaint'ed's'y'nt'ed'ies'ses'ing'able'ric'ive'al'nt'ne'll'al'ify",
     "Is it pronounced github or jithub?",
     "There are three types of people, you have been warned.",
     "hocus pocus, everybody amogus", // i lied
-    "The duck walked up with a glint in his eye.",
     "Fat-Free!",
-    "~ igloo noises ~",
-    "If you wish to make an apple pie from scratch, <br>you must first invent the universe.",
-    "Chips and fish!",
     "It's actually 51/101 full.",
     "No ads!",
     "The universe is all buckets.",
@@ -839,7 +814,7 @@ window.splashes = [
     "Did you know? Oranges are an artificial hybrid of a pomelo and a mandarin.",
     "Did you know? Iron is the most stable element in existence!",
     "Did you know? Strawberries are not berries, but pumpkins and bananas are!",
-    "Did you know? The first use of OMG was in a letter to Winston Churchill!",
+    //"Did you know? The first use of OMG was in a letter to Winston Churchill!",
     "wait a minute...<script>window.delaySplash = setTimeout(() => { alert('You actually waited a minute? I'm impressed') }, 60000)</script>",
     "Let's play rock, paper, scissors!<script>window.delaySplash = setTimeout(() => { alert('I chose rock! Who won?') }, 4000)</script>",
     "Let's play rock, paper, scissors!<script>window.delaySplash = setTimeout(() => { alert('I chose paper! Who won?') }, 4000)</script>",
@@ -849,14 +824,12 @@ window.splashes = [
     "Leave out a bowl of cream every night to stay safe frOm_ tH3 H#7|?37} .>,%",
     "DUKEMZ WHERE THE HELL ARE WE?!",
     "dankemz.",
-    "It's ironic that social media makes people antisocial.",
     "Remember to wash your bones! (teeth)",
     "When we meet again... friend.",
     "I have done nothing but teleport bread for 3 days", // back back again
     "Despite everything, it's still dukemz.",
     "💛 See that heart?",  // no
     "Egg.",
-    "There was a tiny piece of cheese floating in the middle of space.",
     "This text is made of water. Must be splash text.",
     "circles!",
     //"Hexagons are the bestagons", duplicate
@@ -869,17 +842,15 @@ window.splashes = [
     //"dukemz dukemz.",
     "(probably)",
     "Do not look up the name of the spinny loady thingy.",
-    "I am a building",
     //"syzygy has good synergy",
     "Our moon is called Luna!",
     "There's more hydrogen atoms in a molecule of water <br>than there are stars in the entire solar system!",
-    "Dance like a crab on a beach!",
     "<a href='https://www.youtube.com/watch?v=lknzALc0NeA'>dstgdpm10h</a>",
     "the roomba has no natural predators...",
     "[ERROR %2763%: 'Missing splash text']",
     ".-_-.",
     "If you're in the eye of the storm, hope it doesn't blink...",
-    "Defenestration: the act of being thrown out of a window.",
+    "defenestration: the act of being thrown out of a window.",
     "'Road works ahead' signs only appear when it doesn't",
     "The chicken came first, because it was said first.",
     "You don't know who came up with this splash.", // well now you do
@@ -892,8 +863,6 @@ window.splashes = [
     "Left. Right. Block.", // ill be surprised if you get this reference
     "the oven is in the chicken",
     "\"string\"",
-    "73 78 84", 
-    "01100010 01101111 01101111 01101100", // work it out without translation
     //"Octopi have an amazing byte", // unfunny
     "Please do not the cat",
     "Use Firefox!", // detect browser
@@ -901,29 +870,63 @@ window.splashes = [
     "Uninstall McAfee... please", // uninstall twice
     "Living in the present since today!",
     "The default object is sightly, smelly, tasty, noisy, and touchy.",
-    "#524742 is the RGB of RGB",
     "This is a splash. Or is it?", // vsauce music
     "Out now!",
     "You found me!",
-    "And finally, in finality...",
     "Why are you here?",
     "The four data types lived in harmony: bool, float, int, and string<br>But everything changed when the floats attacked - nothing was whole again",
     "You can't tell a joke to an egg. They'll crack.",
-    "Why is a spoon the perfect shape to hold an egg?", //zerok
     "It's called a fork because it has four prongs.<br>If there were three, then it would be a threek of nature.",
     "[Someone kept closing [square brackets. [I've had to open more to counteract.",
-    "An unforgettable luncheon!",
     //"The Neighbour is always horsing around...", i dont remember writing this
     "The more of these I add, the less chance they are seen.",
     "It says gullible in the console.",
-    "Why is it called a splash, it sounds nothing like a splash.",
     "router (epic)",
     "VOID",
-    "Why are they called 'dles' when they are anything but",
-    "Permaspike remains unchanged",
     
     // ewoly end (epic)
     "This is almost the last splash text. Almost, but not quite."
+]
+
+window.alternatesplashes = [ // im moving all my bad ones here so they only appear on refresh, if you want you can do it too
+    "73 78 84", 
+    "01100010 01101111 01101111 01101100", // work it out without translation
+        "Mail mail you mail mail and mail mail you mail mail and",
+    "*breathes*",
+    "Is water wet? Well, here's a better question: is ice icy?",
+    "12 13 21 22 23 24 32 34 41 42 44", // grid
+    "Each Peach Pear Plum",
+    "Welcome to Dukemz's Pizza Emporium, how may we help you?",
+    "Take your age. Add 2. Subtract 2. That's your age.",
+    "This splash has only 41 characters in it.",
+    "ping-pong = png(i-o)",
+    "3... 2... 1...",
+    "sdrawkcab",
+    "Computer will.",
+    "Computer knows.",
+    "Toppling the economy with seashells and biscuits.",
+    "Photosensitive Scissor Warning",
+    "Around the world...",
+    "+++ = 6<br>--+ = 5<br>++- = ?",
+    "A wild viewer has been spotted!",
+    "Duck in the mud!",
+    "idk tbh gg ngl gtg brb ttyl cya gn",
+    "whomst'd've'ly'yaint'ed's'y'nt'ed'ies'ses'ing'able'ric'ive'al'nt'ne'll'al'ify",
+    "The duck walked up with a glint in his eye.",
+    "~ igloo noises ~",
+    "If you wish to make an apple pie from scratch, <br>you must first invent the universe.",
+    "Chips and fish!",
+    "It's ironic that social media makes people antisocial.",
+    "There was a tiny piece of cheese floating in the middle of space.",
+    "I am a building",
+    "Dance like a crab on a beach!",
+    "#524742 is the RGB of RGB",
+    "And finally, in finality...",
+    "Why is a spoon the perfect shape to hold an egg?", //zerok
+    "An unforgettable luncheon!",
+    "Why is it called a splash, it sounds nothing like a splash.",
+    "Why are they called 'dles' when they are anything but",
+    "Permaspike remains unchanged",
 ]
 // in the future - put date specific splashes here
 // i mean, sure ok i can -ewoly
@@ -934,9 +937,9 @@ const hour = today.getHours();
 const dayofweek = today.getDay();
 const monthname = ["January","February","March","April","May","June","July","August","September","October","November","December"][month];
 const datesplashes = [ 
-    // [splash, start month, endmonth, startday, endday, starthour, endhour, day, special]
-    // (set as null to ignore; start and end are inclusive unless they cycle so end is exclusive; index start at 0; special means priority)
-    ["What are you doing for the new year?", 0, 0, 0, 15, null, null, null, 10],
+    // [splash, start month, endmonth, startday, endday, starthour, endhour, day, priority]
+    // (set as null to ignore; start and end are inclusive; index start at 0; priority of 1 means not forced)
+    ["What are you doing for the new year?", 0, 0, 0, 4, null, null, null, 10],
     ["Go to sleep", null, null, null, null, 23, 4, null, 10],
     ["Why are you awake at this time?", null, null, null, null, 23, 5, null, 10000],
     ["Good morning!", null, null, null, null, 5, 11, null, 1],
@@ -967,12 +970,13 @@ const datesplashes = [
 // add more splashes pls -ewoly
 const numofsplashes = splashes.length + datesplashes.length + 2
 datesplashes.sort((a, b) => a[8] - b[8])
+datesplashes.reverse()
 window.forcedsplashes = []
 for (let splooshid = 0; splooshid < datesplashes.length; splooshid++) {
     let sploosh = datesplashes[splooshid]
-    if ((month >= sploosh[1] && month <= sploosh[2]) != sploosh[1] > sploosh[2] || sploosh[1] == null) {
-        if ((day >= sploosh[3] && day <= sploosh[4]) != sploosh[3] > sploosh[4] || sploosh[3] == null) {
-            if ((hour >= sploosh[5] && hour <= sploosh[6]) != sploosh[5] > sploosh[6] || sploosh[5] == null) {
+    if ((month >= sploosh[1] && month <= sploosh[2] && sploosh[1] <= sploosh[2]) || ((month >= sploosh[1] || month <= sploosh[2]) && sploosh[1] > sploosh[2]) || sploosh[1] == null) {
+        if ((day >= sploosh[3] && day <= sploosh[4] && sploosh[3] <= sploosh[4]) || ((day >= sploosh[3] || day <= sploosh[4]) && sploosh[3] > sploosh[4]) || sploosh[3] == null) {
+            if ((hour >= sploosh[5] && hour <= sploosh[6] && sploosh[5] <= sploosh[6]) || ((hour >= sploosh[5] || hour <= sploosh[6]) && sploosh[5] > sploosh[6]) || sploosh[5] == null) {
                 if (dayofweek == sploosh[7] || sploosh[7] == null) {
                     if (sploosh[8] > 1) {
                         forcedsplashes.push(sploosh[0])
@@ -986,7 +990,7 @@ for (let splooshid = 0; splooshid < datesplashes.length; splooshid++) {
 }
 
 splashes.push(`There are ${numofsplashes} splash texts. Isn't that weird?`);
-splashes.push(`The chance of you seeing this message is 1 in ${splashes.length + 1}.`);
+splashes.push(`The chance of you seeing this message is 1 in ${splashes.length + Math.floor(alternatesplashes.length/3) + 1}.`);
 window.splashReloadCount = 0;
 
 // everything below here is tb's stuff
@@ -1050,7 +1054,11 @@ const recalcShape = () => {
         sploosh = forcedsplashes[0]
         forcedsplashes.shift()
     } else {
-        sploosh = splashes[Math.floor(Math.random()*splashes.length)];
+        if (Math.floor(Math.random()*(3*splashes.length+alternatesplashes.length)) > 3*splashes.length && splashReloadCount > 0) {
+            sploosh = alternatesplashes[Math.floor(Math.random()*alternatesplashes.length)];
+        } else {
+            sploosh = splashes[Math.floor(Math.random()*splashes.length)];
+        }
     }
     
     // biscuit to the rescue with jquery (hopefully)
