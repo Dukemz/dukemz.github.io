@@ -958,9 +958,9 @@ const datesplashes = [
     ["Happy Twixmas!", 11, 11, 26, 31, null, null, null, 1],
     ["Error 404: Date Not Found", 3, 3, 3, 3, null, null, null, 100],
     ["Oh hey look it's Friday the Thirteenth", null, null, 12, 12, null, null, 4, 10],
-    [`Day One: Survive ${monthname}`, null, null, 0, 0, null, null, null, 1]
+    [`Day One: Survive ${monthname}`, null, null, 0, 0, null, null, null, 1],
     [`Day ${day+1} of ${monthname}? What's next, day ${day+2} of ${monthname}?`, null, null, 0, 26, null, null, null, 1],
-
+    
     [`It's already ${monthname}?`, null, null, null, null, null, null, null, 1],
     [`Embracing today since ${day+1}/${month+1}/${today.getYear()}!`, null, null, null, null, null, null, null, 1],
 ]
