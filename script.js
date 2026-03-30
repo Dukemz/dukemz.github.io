@@ -849,7 +849,7 @@ window.splashes = [
     "[ERROR %2763%: 'Missing splash text']",
     ".-_-.",
     "If you're in the eye of the storm, hope it doesn't blink...",
-    "defenestration: the act of being thrown out of a window.",
+    "defenestration: the act of throwing someone out of a window.",
     "'Road works ahead' signs only appear when it doesn't",
     "The chicken came first, because it was said first.",
     "You don't know who came up with this splash.", // well now you do
