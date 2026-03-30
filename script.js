@@ -431,7 +431,7 @@ window.splashes = [
     "EVIL boop",
     "nuh uh",
     "It would be so awesome, it would be so cool",
-    "It would be incredibly awkward if someone found this site and expected it to be professional.",
+    "It would be incredibly awkward if someone found<br>this site and expected it to be professional.",
     "Don't worry, few people get the inside jokes here.",
     "Grah! Interloper!",
     "16 // 16 // 16",
@@ -749,7 +749,6 @@ window.splashes = [
     "1% programming, 99% debugging.",
     "But what does it mean?",
     "The more splashes there are, the less likely you'll see this one. Enjoy it.",
-    "Fish Gaming Wednesday",
     "12345 is a passCODE!",
     ":O",
     "Straighten your back, shrimp!",
@@ -940,7 +939,7 @@ const datesplashes = [
     // [splash, start month, endmonth, startday, endday, starthour, endhour, day, priority]
     // (set as null to ignore; start and end are inclusive; index start at 0; priority of 1 means not forced)
     ["What are you doing for the new year?", 0, 0, 0, 4, null, null, null, 10],
-    ["Go to sleep", null, null, null, null, 23, 4, null, 10],
+    ["Go to sleep", null, null, null, null, 23, 4, null, 2],
     ["Why are you awake at this time?", null, null, null, null, 23, 5, null, 10000],
     ["Good morning!", null, null, null, null, 5, 11, null, 1],
     ["Good afternoon!", null, null, null, null, 12, 16, null, 1],
@@ -955,6 +954,8 @@ const datesplashes = [
     ["Don't forget to jump today!", 1, 1, 28, 28, null, null, null, 1000],
     ["<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Hmm what day is it?</a>", 3, 3, 0, 0, null, null, null, 10000], // april fools day
     ["It is Wednesday my dudes", null, null, null, null, null, null, 2, 1],
+    ["It is currently Fish Gaming Wednesday", null, null, null, null, null, null, 2, 1],
+    ["Better game before Fish Gaming Wednesday ends!", null, null, null, null, null, null, 2, 1],
     ["Thank Goodness It's Friday", null, null, null, null, null, null, 4, 1],
     ["'I hate Mondays' - Garfield", null, null, null, null, null, null, 0, 1],
     ["It's Chewsday, innit", null, null, null, null, null, null, 1, 1],
